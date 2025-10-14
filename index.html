@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IAGES</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+    body {
+      font-family: system-ui, sans-serif;
+    }
+
+    .marquee-container {
+      overflow: hidden;
+      background-color: #0b3a4a;
+      white-space: nowrap;
+      padding: 8px 0;
+    }
+
+    .marquee {
+      display: inline-block;
+      white-space: nowrap;
+      animation: marquee 12s linear infinite;
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+</style>
+
+</head>
+<body class="relative min-h-screen bg-gradient-to-b from-[#08111C] to-[#0E1A29] text-white overflow-x-hidden">
+
+  <!-- Banner superior -->
+  <div class="marquee-container text-white text-[12px] sm:text-sm font-medium">
+    <p class="marquee">
+      Instituto de Análisis y Gestión • Instituto de Análisis y Gestión • Instituto de Análisis y Gestión •
+    </p>
+  </div>
+  <!-- Header -->
+  <header class="flex flex-col md:flex-row items-center justify-center md:justify-between px-4 sm:px-12 py-2 w-full">
+    <!-- Logo -->
+    <a href="index.html" class="flex-shrink-0 mb-3 mt-3 md:mb-0 md:mt-3">
+      <img alt="IAGES" class="h-[60px] sm:h-[80px] cursor-pointer" src="img/logo_IAGES.svg"/>
+    </a>
+
+    <!-- Nav -->
+    <nav class="flex flex-wrap justify-center md:justify-end space-x-4 sm:space-x-6 md:space-x-10 text-sm sm:text-lg md:ml-8 w-full md:w-auto">
+      <a class="hover:text-[#00C2CB]" href="quienessomos.html">Quiénes somos</a>
+      <a class="hover:text-[#00C2CB]" href="quehacemos.html">Que hacemos</a>
+      <a class="hover:text-[#00C2CB]" href="eventos.html">Eventos</a>
+      <a class="hover:text-[#00C2CB]" href="informacion.html">Contáctanos</a>
+    </nav>
+  </header>
+
+  <!-- Sección principal / Hero -->
+  <main class="flex flex-col items-center text-center px-4 py-14 sm:px-8 sm:py-0 md:px-12 lg:px-2 min-h-[800px] w-full relative z-10
+    pb-12 sm:pb-20 md:pb-18 lg:pb-30">
+
+    <!-- Contenido principal -->
+    <div class="flex flex-col items-center w-full pt-8 sm:pt-32 md:pt-16 lg:pt-20 pb-6 sm:pb-16 md:pb-10 lg:pb-6 z-10">
+      <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center leading-snug mb-6">
+        Diseñando políticas, fortaleciendo capacidades, <br>integrando actores.
+      </h1>
+
+      <p class="text-sm sm:text-base md:text-lg lg:text-lg max-w-xs sm:max-w-2xl md:max-w-4xl lg:max-w-5xl mb-8 px-2 sm:px-0">
+        Apoyo técnico y estratégico a gobiernos, proveedores de salud y empresas para fortalecer sistemas de salud y proteger poblaciones vulnerables.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 flex-wrap justify-center">
+        <a href="quienessomos.html" class="inline-block bg-[#E63946] hover:bg-[#d62828] text-white px-6 py-2 rounded text-sm font-medium text-center">
+          Conoce más
+        </a>
+        <a href="eventos.html" class="inline-block border border-white hover:border-[#00C2CB] hover:text-[#00C2CB] text-white px-6 py-2 rounded text-sm font-medium text-center transition-all duration-200">
+          Ver actividades
+        </a>
+      </div>
+    </div>
+
+    <!-- Contenedor de círculos -->
+    <div class="relative flex justify-center items-center w-full mb-20 sm:mb-20 md:mb-28 lg:mb-40">
+
+      <!-- Círculo 1 (fondo) -->
+      <svg class="absolute w-[250px] sm:w-[350px] md:w-[475px] lg:w-[700px] h-auto z-0" 
+          viewBox="0 0 700 700" preserveAspectRatio="xMidYMid meet">
+        <defs>
+          <radialGradient id="grad1" cx="0%" cy="100%" r="80%">
+            <stop offset="35%" stop-color="rgba(80,180,180,0.5)" /> <!-- turquesa apagado -->
+            <stop offset="100%" stop-color="rgba(13,27,42,0.2)" />   <!-- oscuro transparente -->
+          </radialGradient>
+          <filter id="shadow1" x="-50%" y="-50%" width="200%" height="200%">
+            <feDropShadow dx="2" dy="2" stdDeviation="30" flood-color="rgba(0,50,50,0.05)"/>
+          </filter>
+        </defs>
+        <circle cx="350" cy="350" r="350" fill="url(#grad1)" filter="url(#shadow1)"></circle>
+      </svg>
+
+      <!-- Círculo 2 (fondo) -->
+      <svg class="absolute w-[300px] sm:w-[400px] md:w-[550px] lg:w-[850px] h-auto z-0" 
+          viewBox="0 0 800 800" preserveAspectRatio="xMidYMid meet">
+        <defs>
+          <radialGradient id="grad2" cx="0%" cy="100%" r="80%">
+            <stop offset="15%" stop-color="rgba(64,180,180,0.15)" />
+            <stop offset="100%" stop-color="rgba(13,27,42,0.2)" />
+          </radialGradient>
+          <filter id="shadow2" x="-50%" y="-50%" width="200%" height="200%">
+            <feDropShadow dx="2" dy="2" stdDeviation="30" flood-color="rgba(0,50,50,0.05)"/>
+          </filter>
+        </defs>
+        <circle cx="400" cy="400" r="400" fill="url(#grad2)" filter="url(#shadow2)"></circle>
+      </svg>
+
+      <!-- Círculo 3 (fondo) -->
+      <svg class="absolute w-[350px] sm:w-[450px] md:w-[625px] lg:w-[1000px] h-auto z-0" 
+          viewBox="0 0 850 850" preserveAspectRatio="xMidYMid meet">
+        <defs>
+          <radialGradient id="grad3" cx="0%" cy="100%" r="80%">
+            <stop offset="15%" stop-color="rgba(64,180,180,0.15)" />
+            <stop offset="100%" stop-color="rgba(13,27,42,0.2)" />
+          </radialGradient>
+          <filter id="shadow3" x="-50%" y="-50%" width="200%" height="200%">
+            <feDropShadow dx="2" dy="2" stdDeviation="30" flood-color="rgba(0,50,50,0.05)"/>
+          </filter>
+        </defs>
+        <circle cx="425" cy="425" r="425" fill="url(#grad3)" filter="url(#shadow3)"></circle>
+      </svg>
+
+      <!-- Círculo 4 (fondo) -->
+      <svg class="absolute w-[400px] sm:w-[500px] md:w-[700px] lg:w-[1150px] h-auto z-0" 
+          viewBox="0 0 900 900" preserveAspectRatio="xMidYMid meet">
+        <defs>
+          <radialGradient id="grad4" cx="0%" cy="100%" r="80%">
+            <stop offset="15%" stop-color="rgba(50,80,80,0.15)" /> <!-- turquesa apagado -->
+            <stop offset="100%" stop-color="rgba(13,27,42,0.2)" />
+          </radialGradient>
+          <filter id="shadow4" x="-50%" y="-50%" width="200%" height="200%">
+            <feDropShadow dx="2" dy="2" stdDeviation="30" flood-color="rgba(0,50,50,0.05)"/>
+          </filter>
+        </defs>
+        <circle cx="450" cy="450" r="450" fill="url(#grad4)" filter="url(#shadow4)"></circle>
+      </svg>
+
+      <!-- Círculo 0 (central con imagen, por encima) -->
+      <div class="w-[200px] sm:w-[300px] md:w-[400px] lg:w-[500px] aspect-square rounded-full 
+                  bg-[radial-gradient(circle_at_bottom_left,rgba(64,224,208,0.35)_25%,rgba(0,128,128,0.1)_100%)] 
+                  opacity-90 shadow-[0_0_50px_rgba(64,224,208,0.15)] z-10"
+          style="background-image: url('img/imagen_portada.png'); 
+                  background-size: cover; 
+                  background-position: center;">
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="relative z-30 w-full bg-[#0E2B38] text-white px-10 py-12 ">
+    <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-sm">
+      <!-- Logo -->
+      <a href="index.html" class="flex-shrink-0 mb-3 mt-3 md:mb-0 md:mt-3">
+        <img alt="IAGES" class="h-[60px] sm:h-[80px] cursor-pointer" src="img/logo_IAGES.svg"/>
+      </a>
+
+      <!-- Acerca de nosotros -->
+      <div>
+        <h3 class="text-base font-bold text-[#F4C542] border-b border-[#F4C542] mb-4 pb-1">Ácerca de nosotros</h3>
+        <ul class="space-y-2">
+          <li><a class="hover:underline" href="consultoria.html">Quiénes somos</a></li>
+          <li><a class="hover:underline" href="formacion.html">Que hacemos</a></li>
+          <li><a class="hover:underline" href="politicas.html">Nuestros clientes</a></li>
+          <li><a class="hover:underline" href="asistencia.html">Contáctanos</a></li>
+        </ul>
+      </div>
+
+      <!-- De interés -->
+      <div>
+        <h3 class="text-base font-bold text-[#F4C542] border-b border-[#F4C542] mb-4 pb-1">De interés</h3>
+        <ul class="space-y-2">
+          <li><a class="hover:underline" href="eventos.html">Eventos</a></li>
+          <li><a class="hover:underline" href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+
+      <!-- Redes sociales -->
+      <div>
+        <h3 class="text-base font-bold text-[#F4C542] border-b border-[#F4C542] mb-4 pb-1">Síguenos</h3>
+        <div class="flex items-center space-x-5 mt-4">
+          <a href="#" class="hover:opacity-80 transition" aria-label="Facebook">
+            <img src="img/facebook.svg" alt="Facebook" class="w-6 h-6">
+          </a>
+          <a href="#" class="hover:opacity-80 transition" aria-label="Instagram">
+            <img src="img/instagram.svg" alt="Instagram" class="w-6 h-6">
+          </a>
+          </a>
+          <a href="#" class="hover:opacity-80 transition" aria-label="YouTube">
+            <img src="img/youtube.svg" alt="YouTube" class="w-6 h-6">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Línea inferior (a todo el ancho) -->
+    <div class="mt-10 border-t border-white/10 pt-4 text-center text-xs text-gray-400 w-full">
+      © 2025 IAGES – Investigación y Acción en Gestión de la Salud
+    </div>
+  </footer>
+
+  <!-- AOS Animation -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1200,
+    offset: 80,
+    easing: 'ease-out-cubic',
+    once: false
+  });
+</script>
+</body>
+</html>

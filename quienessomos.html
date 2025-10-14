@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IAGES</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+    body {
+      font-family: system-ui, sans-serif;
+    }
+
+    .marquee-container {
+      overflow: hidden;
+      background-color: #0b3a4a;
+      white-space: nowrap;
+      padding: 8px 0;
+    }
+
+    .marquee {
+      display: inline-block;
+      white-space: nowrap;
+      animation: marquee 12s linear infinite;
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+</style>
+
+</head>
+<body class="relative min-h-screen bg-gradient-to-b from-[#08111C] to-[#0E1A29] text-white overflow-x-hidden">
+
+  <!-- Banner superior -->
+  <div class="marquee-container text-white text-[12px] sm:text-sm font-medium">
+    <p class="marquee">
+      Instituto de Análisis y Gestión • Instituto de Análisis y Gestión • Instituto de Análisis y Gestión •
+    </p>
+  </div>
+  
+  <!-- Header -->
+  <header class="sticky top-0 z-50 flex flex-col md:flex-row items-center justify-center md:justify-between px-4 sm:px-12 py-2 w-full bg-black shadow">
+    <!-- Logo -->
+    <a href="index.html" class="flex-shrink-0 mb-3 mt-3 md:mb-0 md:mt-3">
+      <img alt="IAGES" class="h-[60px] sm:h-[80px] cursor-pointer" src="img/logo_IAGES.svg"/>
+    </a>
+
+    <!-- Nav -->
+    <nav class="flex flex-wrap justify-center md:justify-end space-x-4 sm:space-x-6 md:space-x-10 text-sm sm:text-lg md:ml-8 w-full md:w-auto">
+      <a class="hover:text-[#00C2CB] text-white" href="quienessomos.html">Quiénes somos</a>
+      <a class="hover:text-[#00C2CB] text-white" href="quehacemos.html">Que hacemos</a>
+      <a class="hover:text-[#00C2CB] text-white" href="eventos.html">Eventos</a>
+      <a class="hover:text-[#00C2CB] text-white" href="informacion.html">Contáctanos</a>
+    </nav>
+  </header>
+
+  <main class="flex flex-col w-full">
+
+    <!-- Hero Section -->
+    <section class="relative w-full h-[80vh] flex items-center justify-start text-left overflow-hidden">
+      <!-- Imagen de fondo -->
+      <img src="img/banner_quienes_somos.png" alt="IAGES Quiénes Somos" 
+        class="absolute inset-0 w-full h-full object-cover 
+        object-[25%_center] sm:object-[55%_center] md:object-[50%_center] lg:object-center">
+
+      <!-- Filtro oscuro -->
+      <div class="absolute inset-0 bg-black/70"></div>
+
+      <!-- Título alineado a la izquierda -->
+      <div class="relative z-10 text-white px-20 sm:px-26">
+        <h1 class="text-4xl sm:text-6xl font-bold">Quiénes somos</h1>
+      </div>
+    </section>
+
+    <!-- Section 1 -->
+    <section class="bg-[#0a3d3f] py-20 text-white text-center">
+      <div class="max-w-4xl mx-auto px-6">
+        <!-- Título con barrita decorativa -->
+        <div class="inline-block mb-6">
+          <h2 class="text-3xl font-bold mb-3">Sobre nosotros</h2>
+          <div class="w-20 h-1 bg-[#10cfc9] mx-auto rounded-full"></div>
+        </div>
+
+        <!-- Párrafo -->
+        <p class="text-lg leading-relaxed">
+          El Instituto de Análisis y Gestión – IAGES - es una consultora peruana liderada por mujeres, especializada en el diseño e implementación de políticas y en el fortalecimiento de capacidades para mejorar los sistemas de salud, con un enfoque particular en equidad.
+          <br><br>
+          Promovemos soluciones viables, basadas en evidencia y construidas de manera colaborativa, tanto en el ámbito del sector público como del sector privado. Nuestra aproximación combina rigurosidad técnica, comprensión del entorno político-institucional y visión estratégica, con atención especial a barreras estructurales que afectan a poblaciones históricamente desatendidas.
+          <br><br>
+          Nuestro compromiso es ofrecer soluciones factibles, sustentadas en evidencia, que respondan a los desafíos reales de los sistemas de salud.
+        </p>
+
+        <!-- Botón "Qué hacemos" -->
+        <div class="mt-10">
+          <a href="que-hacemos.html" 
+            class="inline-block border-2 border-[#10cfc9] text-[#10cfc9] font-semibold px-8 py-4 rounded-full hover:bg-[#10cfc9] hover:text-[#0a3d3f] transition duration-300 shadow-lg">
+            Qué hacemos
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="bg-gray-200 py-16">
+      <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
+        <img src="img/Midori.jpg" alt="DESCRIPCIÓN"
+            class="w-full h-96 sm:h-[28rem] md:h-[32rem] rounded-2xl shadow-lg object-cover">
+        <div class="md:ml-8">
+          <h3 class="text-3xl font-bold mb-4 text-[#10cfc9]">Midori de Habich</h3>
+          <p class="text-gray-700 leading-relaxed whitespace-pre-line">
+            Economista con más de 25 años de experiencia en investigación, diseño e implementación de políticas públicas. Como Ministra de Salud del Perú (julio 2012 - noviembre 2014), lideró una reforma del sector orientada a lograr la cobertura universal en salud.
+            
+            Entre 2019 y 2025, se desempeñó como Directora Técnica del proyecto global Local Health System Sustainability (LHSS) de USAID. Entre 1995 y 2012, estuvo a cargo de diversos proyectos de salud financiados por USAID en Perú, brindando asistencia técnica para el desarrollo de sistemas de gestión y financiamiento en el sector.
+
+            Además, fue Jefa del Departamento de Investigación Económica y Profesional Especializado en el Departamento de Estudios Sociales del Banco Central de Reserva del Perú.
+            
+            Posee una maestría en Política y Planificación Económica del Instituto de Estudios Sociales de la Universidad Erasmus, Países Bajos.      
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section class="bg-gray-100 py-16">
+      <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
+        <div class="md:mr-8">
+          <h3 class="text-3xl font-bold mb-4 text-[#10cfc9]">Paulina Giusti</h3>
+          <p class="text-gray-700 leading-relaxed whitespace-pre-line">
+            Pediatra con más de 30 años de experiencia en gestión, atención clínica y desarrollo de políticas en el sector salud en Perú. Fue Jefe de Proyecto en Perú y Asesora Técnica Senior para Honduras, Colombia, República Dominicana y Jordania del proyecto LHSS de USAID (2021-2025).
+            
+            Como Viceministra de Salud (2014-2015) y Jefa de Gabinete (2012-2014), participó activamente en el diseño e implementación de la reforma del sector salud. Dirigió el Programa de Apoyo a la Reforma del Sector Salud (PARSALUD II), financiado por BID y BM (2008-2012), enfocado en mejorar la salud maternoinfantil en las regiones más vulnerables del país.
+
+            Antes se desempeñó como asesora de la Alta Dirección del MINSA, consultora en aseguramiento de salud e Intendenta de Regulación en la Superintendencia de Entidades Prestadoras de Salud.
+            
+            También fue Jefa del Servicio de Pediatría en el Hospital D.A. Carrión. Cuenta con una maestría en Salud Pública de la Universidad Johns Hopkins, EE.UU.      
+          </p>
+        </div>
+        <img src="img/Paulina.png" alt="DESCRIPCIÓN"
+            class="w-full h-96 sm:h-[28rem] md:h-[32rem] rounded-2xl shadow-lg object-cover object-top">
+      </div>
+    </section>
+
+    <!-- Section 4 -->
+    <section class="bg-gray-200 py-16">
+      <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
+        <img src="img/Flor.jpg" alt="DESCRIPCIÓN"
+            class="w-full h-96 sm:h-[28rem] md:h-[32rem] rounded-2xl shadow-lg object-cover object-[center_25%]">
+        <div class="md:ml-8">
+          <h3 class="text-3xl font-bold mb-4 text-[#10cfc9]">Flor de María Phillips</h3>
+          <p class="text-gray-700 leading-relaxed whitespace-pre-line">
+            Médico especialista en Administración de Salud por la UPCH, con más de 30 años de experiencia en posiciones directivas dentro de organizaciones públicas y privadas dedicadas a la supervisión, financiamiento y prestación de servicios de salud, tanto a nivel nacional como internacional.
+
+            Entre 2021 y 2024, ocupó diversos cargos, incluyendo la Jefatura del Seguro Integral de Salud (SIS) y FISSAL, así como la Presidencia de SISOL Salud. Como Superintendente Nacional de Salud (2012-2016), lideró el diseño y gestión de SUSALUD para garantizar la protección de los derechos en salud en Perú.
+            
+            Además, ha sido Gerente de Servicios Hospitalarios en IPSS (hoy EsSalud) y Gerente de Salud en Pacífico Compañía de Seguros y EPS, con responsabilidades en gestión del riesgo, control de costos de siniestros y auditoría médica. A lo largo de su trayectoria, ha ejercido como médica en diversas instituciones prestadoras de salud y ha ocupado roles clave en el diseño de políticas sanitarias.
+            
+            Fue Presidenta de SPEAS y actualmente dirige el MBA en Salud de la UPC. Es Auditora Médica, Auditora ISO y posee un MBA por la Universidad de Montreal, Quebec, Canadá.      
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5 -->
+    <section class="bg-gray-100 py-16">
+      <h2 class="text-3xl font-bold mb-12 text-[#10cfc9] text-center">Profesionales asociados</h2>
+      
+      <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+        
+        <!-- Profesional 1 -->
+        <div class="bg-white rounded-2xl p-6 flex flex-col items-center text-center">
+          <div class="w-full h-48 sm:h-60 md:h-72 rounded-2xl overflow-hidden mb-4">
+            <img src="img/Jaime Chang.jpg" 
+                alt="Jaime Chang" 
+                class="w-full h-full object-cover">
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-[#10cfc9]">Jaime Chang</h3>
+          <p class="text-gray-700 text-sm leading-relaxed">
+            Médico cirujano por la Universidad Peruana Cayetano Heredia, con maestrías en Ciencias con mención en Salud Comunitaria en Países en Desarrollo (London School of Hygiene and Tropical Medicine) y en Salud Pública (Universidad Peruana Cayetano Heredia). Cuenta, además, con una especialización en Ecología Humana por la Escuela Nacional de Salud Pública de Brasil.
+          </p>
+          </div>
+        
+        <!-- Profesional 2 -->
+        <div class="bg-white rounded-2xl p-6 flex flex-col items-center text-center">
+          <div class="w-full h-48 sm:h-60 md:h-72 rounded-2xl overflow-hidden mb-4">
+            <img src="#" 
+                alt="Jaime Chang" 
+                class="w-full h-full object-cover">
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-[#10cfc9]">Cecilia Ma</h3>
+          <p class="text-gray-700 text-sm leading-relaxed">
+            Médica cirujana, administradora y economista de la salud, magister en Gestión y Políticas Públicas, Tiene experiencia en diseño, asesoría en implementación y evaluación de proyectos de salud. Cuenta con más de 34 años de experiencia, en más de 19 países. Ha trabajado como consultora y como funcionaria en cargos públicos relevantes.
+          </p>
+        </div>
+
+        <!-- Profesional 3 -->
+        <div class="bg-white rounded-2xl p-6 flex flex-col items-center text-center">
+          <div class="w-full h-48 sm:h-60 md:h-72 rounded-2xl overflow-hidden mb-4">
+            <img src="#" 
+                alt="Jaime Chang" 
+                class="w-full h-full object-cover">
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-[#10cfc9]">Edgardo Nepo</h3>
+          <p class="text-gray-700 text-sm leading-relaxed">
+            Médico cirujano por la Universidad Nacional de Trujillo, con especialización en Epidemiología (Universidad San Ignacio de Loyola), y formación en liderazgo y gestión pública. Graduado del Programa de Líderes en Salud Internacional (OPS/OMS) y del Programa de Alta Gerencia de la Escuela Nacional de Administración Pública.
+          </p>
+        </div>
+
+        <!-- Profesional 4 -->
+        <div class="bg-white rounded-2xl p-6 flex flex-col items-center text-center">
+          <div class="w-full h-48 sm:h-60 md:h-72 rounded-2xl overflow-hidden mb-4">
+            <img src="img/Margarita Petrera.jpg" 
+                alt="Jaime Chang" 
+                class="w-full h-full object-cover">
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-[#10cfc9]">Margarita Petrera</h3>
+          <p class="text-gray-700 text-sm leading-relaxed">
+            Socióloga, economista y Magister en Economía por la PUCP, Doctora en Salud Pública por la UPCH. Ha sido funcionaria de la Organización Panamericana de la Salud en Perú (OPS/OMS) en los temas de políticas de salud, gestión, seguros y economía de la salud. Ha sido jefe del Proyecto Observatorio de la Salud en el Consorcio de Investigación Económica y Social.
+          </p>
+        </div>
+
+        <!-- Profesional 5 -->
+        <div class="bg-white rounded-2xl p-6 flex flex-col items-center text-center">
+          <div class="w-full h-48 sm:h-60 md:h-72 rounded-2xl overflow-hidden mb-4">
+            <img src="img/Augusto Portocarrero.jpg" 
+                alt="Jaime Chang" 
+                class="w-full h-full object-cover">
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-[#10cfc9]">Augusto Portocarrero</h3>
+          <p class="text-gray-700 text-sm leading-relaxed">
+            Economista y Magíster en Ciencias Políticas, con trayectoria desde 1988 en el análisis del impacto de las políticas económicas y laborales sobre las condiciones de vida de la población. Desde 1995, se ha especializado en el estudio, análisis y formulación de propuestas sobre gasto público y políticas públicas, temas sobre los que cuenta con diversas publicaciones.
+          </p>
+        </div>
+
+        <!-- Profesional 6 -->
+        <div class="bg-white rounded-2xl p-6 flex flex-col items-center text-center">
+          <div class="w-full h-48 sm:h-60 md:h-72 rounded-2xl overflow-hidden mb-4">
+            <img src="#" 
+                alt="Jaime Chang" 
+                class="w-full h-full object-cover">
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-[#10cfc9]">Luis Seminario</h3>
+          <p class="text-gray-700 text-sm leading-relaxed">
+            Médico Cirujano con Maestría en Salud Pública por Johns Hopkins (1984), con amplia trayectoria en salud pública nacional e internacional. Fue Gerente de Proyectos en USAID (1993–2013), liderando iniciativas en epidemiología, gobernabilidad, financiamiento, recursos humanos, servicios y sistemas de salud. En el Ministerio de Salud, ocupó cargos directivos clave como Director General de la ENSAP (2018–2022), OGE, VEA, PAI y programas materno- infantiles.
+          </p>
+        </div>
+
+        <!-- Profesional 7 -->
+        <div class="bg-white rounded-2xl p-6 flex flex-col items-center text-center">
+          <div class="w-full h-48 sm:h-60 md:h-72 rounded-2xl overflow-hidden mb-4">
+            <img src="img/Agustin Silva.jpg" 
+                alt="Jaime Chang" 
+                class="w-full h-full object-cover object-[center_65%]">
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-[#10cfc9]">Agustin Silva</h3>
+          <p class="text-gray-700 text-sm leading-relaxed">
+            Abogado por la Universidad Nacional Federico Villarreal, egresado de la Maestría en Gestión Pública de la PUCP y del Doctorado en Derecho en la misma universidad. Becado por la Universidad Castilla-La Mancha para estudios sobre delitos contra la propiedad intelectual. Especialista en Derecho Constitucional, Civil, Administrativo, Penal, Laboral y de la Salud, con amplia trayectoria como asesor y consultor jurídico. Cuenta con experiencia en gestión pública, políticas anticorrupción, gobernabilidad y elaboración de documentos de gestióVan.          </p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="relative z-30 w-full bg-[#0E2B38] text-white px-10 py-12">
+    <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-sm">
+      <!-- Logo -->
+      <a href="index.html" class="flex-shrink-0 mb-3 mt-3 md:mb-0 md:mt-3">
+        <img alt="IAGES" class="h-[60px] sm:h-[80px] cursor-pointer" src="img/logo_IAGES.svg"/>
+      </a>
+
+      <!-- Acerca de nosotros -->
+      <div>
+        <h3 class="text-base font-bold text-[#F4C542] border-b border-[#F4C542] mb-4 pb-1">Ácerca de nosotros</h3>
+        <ul class="space-y-2">
+          <li><a class="hover:underline" href="consultoria.html">Quiénes somos</a></li>
+          <li><a class="hover:underline" href="formacion.html">Que hacemos</a></li>
+          <li><a class="hover:underline" href="politicas.html">Nuestros clientes</a></li>
+          <li><a class="hover:underline" href="asistencia.html">Contáctanos</a></li>
+        </ul>
+      </div>
+
+      <!-- De interés -->
+      <div>
+        <h3 class="text-base font-bold text-[#F4C542] border-b border-[#F4C542] mb-4 pb-1">De interés</h3>
+        <ul class="space-y-2">
+          <li><a class="hover:underline" href="eventos.html">Eventos</a></li>
+          <li><a class="hover:underline" href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+
+      <!-- Redes sociales -->
+      <div>
+        <h3 class="text-base font-bold text-[#F4C542] border-b border-[#F4C542] mb-4 pb-1">Síguenos</h3>
+        <div class="flex items-center space-x-5 mt-4">
+          <a href="#" class="hover:opacity-80 transition" aria-label="Facebook">
+            <img src="img/facebook.svg" alt="Facebook" class="w-6 h-6">
+          </a>
+          <a href="#" class="hover:opacity-80 transition" aria-label="Instagram">
+            <img src="img/instagram.svg" alt="Instagram" class="w-6 h-6">
+          </a>
+          </a>
+          <a href="#" class="hover:opacity-80 transition" aria-label="YouTube">
+            <img src="img/youtube.svg" alt="YouTube" class="w-6 h-6">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Línea inferior (a todo el ancho) -->
+    <div class="mt-10 border-t border-white/10 pt-4 text-center text-xs text-gray-400 w-full">
+      © 2025 IAGES – Investigación y Acción en Gestión de la Salud
+    </div>
+  </footer>
+</body>
+</html>
