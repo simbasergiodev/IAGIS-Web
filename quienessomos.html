@@ -55,8 +55,8 @@
     <!-- Nav -->
     <nav class="flex flex-wrap justify-center md:justify-end space-x-4 sm:space-x-6 md:space-x-10 text-sm sm:text-lg md:ml-8 w-full md:w-auto">
       <a class="hover:text-[#00C2CB] text-white" href="quienessomos.html">Quiénes somos</a>
-      <a class="hover:text-[#00C2CB] text-white" href="quehacemos.html">Que hacemos</a>
-      <a class="hover:text-[#00C2CB] text-white" href="eventos.html">Eventos</a>
+      <a class="hover:text-[#00C2CB] text-white" href="quehacemos.html">Qué hacemos</a>
+      <a class="hover:text-[#00C2CB] text-white" href="recursos.html">Recursos</a>
       <a class="hover:text-[#00C2CB] text-white" href="informacion.html">Contáctanos</a>
     </nav>
   </header>
@@ -111,7 +111,7 @@
     <section class="bg-gray-200 py-12">
       <div class="max-w-4xl mx-auto px-6 grid md:grid-cols-2 gap-6 items-center">
         <img src="img/Midori.jpg" alt="DESCRIPCIÓN"
-          class="w-full h-64 sm:h-[18rem] md:h-[20rem] rounded-2xl shadow-lg object-cover">
+          class="w-full h-64 sm:h-[18rem] md:h-[20rem] rounded-2xl shadow-lg object-cover object-[center_5%]">
         <div class="md:ml-6">
           <h3 class="text-xl font-bold mb-2 text-[#10cfc9]">Midori de Habich</h3>
           <p class="text-gray-700 leading-snug text-xs whitespace-pre-line">
@@ -161,90 +161,451 @@
       </div>
     </section>
 
-<!-- Section 5 -->
-<section class="bg-gray-100 py-16">
-  <h2 class="text-3xl font-bold mb-12 text-[#10cfc9] text-center">Profesionales asociados</h2>
-  
-  <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-    
-    <!-- Profesional -->
-    <div class="bg-white rounded-2xl p-6 lg:p-4 flex flex-col items-center text-center">
-      <div class="w-full h-48 sm:h-60 md:h-72 lg:h-56 rounded-2xl overflow-hidden mb-4">
-        <img src="img/Jaime Chang.jpg" alt="Jaime Chang" class="w-full h-full object-cover">
-      </div>
-      <h3 class="text-xl lg:text-lg font-bold mb-2 text-[#10cfc9]">Jaime Chang</h3>
-      <p class="text-gray-700 text-sm lg:text-xs leading-relaxed lg:leading-snug">
-        Médico cirujano por la Universidad Peruana Cayetano Heredia, con maestrías en Ciencias en Salud Comunitaria (London School of Hygiene and Tropical Medicine) y Salud Pública (UPCH). Especializado en Ecología Humana por la ENSP de Brasil.
-      </p>
-    </div>
+    <!-- Section 5: Profesionales asociados -->
+    <section class="bg-gray-100 py-16">
+      <h2 class="text-3xl font-bold mb-12 text-[#10cfc9] text-center">Profesionales asociados</h2>
 
-    <!-- Profesional -->
-    <div class="bg-white rounded-2xl p-6 lg:p-4 flex flex-col items-center text-center">
-      <div class="w-full h-48 sm:h-60 md:h-72 lg:h-56 rounded-2xl overflow-hidden mb-4">
-        <img src="img/Cecilia.jpg" alt="Cecilia Ma" class="w-full h-full object-cover">
-      </div>
-      <h3 class="text-xl lg:text-lg font-bold mb-2 text-[#10cfc9]">Cecilia Ma</h3>
-      <p class="text-gray-700 text-sm lg:text-xs leading-relaxed lg:leading-snug">
-        Médica cirujana, administradora y economista de la salud, magíster en Gestión y Políticas Públicas. Con más de 34 años de experiencia en diseño e implementación de proyectos de salud en más de 19 países.
-      </p>
-    </div>
+      <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
 
-    <!-- Profesional -->
-    <div class="bg-white rounded-2xl p-6 lg:p-4 flex flex-col items-center text-center">
-      <div class="w-full h-48 sm:h-60 md:h-72 lg:h-56 rounded-2xl overflow-hidden mb-4">
-        <img src="img/Edgardo Nepo.jpg" alt="Edgardo Nepo" class="w-full h-full object-cover">
-      </div>
-      <h3 class="text-xl lg:text-lg font-bold mb-2 text-[#10cfc9]">Edgardo Nepo</h3>
-      <p class="text-gray-700 text-sm lg:text-xs leading-relaxed lg:leading-snug">
-        Médico cirujano especializado en Epidemiología, con formación en liderazgo y gestión pública. Graduado del Programa de Líderes en Salud Internacional (OPS/OMS) y del Programa de Alta Gerencia de la ENAP.
-      </p>
-    </div>
+        <!-- Profesional (Jaime) -->
+        <div
+          id="card-jaime"
+          class="bg-white rounded-2xl p-6 lg:p-4 flex flex-col justify-between items-center text-center overflow-hidden transition-all duration-500 
+          h-full min-h-[420px] sm:min-h-[380px] md:min-h-[360px] lg:min-h-[260px]"
+        >
+          <h3 class="text-xl lg:text-lg font-bold mb-2 text-[#10cfc9]">Jaime Chang</h3>
+          <p class="text-gray-700 text-sm lg:text-xs leading-relaxed lg:leading-snug mb-3">
+            Médico cirujano por la Universidad Peruana Cayetano Heredia con maestría en Ciencias – Salud Comunitaria en Países en Desarrollo (London School of Hygiene and Tropical Medicine) y maestría en Salud Pública (UPCH). Especializado en Ecología Humana (Escuela Nacional de Salud Pública, Brasil). Tiene 27 años de experiencia liderando iniciativas bilaterales y regionales de USAID, entre ellas la Iniciativa Amazónica contra la Malaria y la respuesta al Zika y al COVID-19 en Sudamérica.
+          </p>
 
-        <!-- Profesional -->
-        <div class="bg-white rounded-2xl p-6 lg:p-4 flex flex-col items-center text-center">
-          <div class="w-full h-48 sm:h-60 md:h-72 lg:h-56 rounded-2xl overflow-hidden mb-4">
-            <img src="img/Margarita Petrera.jpg" alt="Margarita Petrera" class="w-full h-full object-cover">
+          <button
+            id="btn-jaime"
+            class="text-[#10cfc9] font-semibold text-sm lg:text-xs hover:underline focus:outline-none transition-colors"
+          >
+            Ver más
+          </button>
+
+          <div
+            id="extra-card-jaime"
+            class="opacity-0 max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
+          >
+            <div class="mt-4 text-gray-700 text-sm lg:text-xs leading-relaxed lg:leading-snug space-y-3">
+              <p>
+                Experto en atención primaria, trabajo comunitario, epidemiología, control de enfermedades infecciosas, calidad y fortalecimiento de sistemas de salud. Ha diseñado e implementado estrategias en migración y seguridad sanitaria bajo el enfoque Una Salud. Ha gestionado programas complejos, brindando asistencia técnica a entidades gubernamentales y ONG, y cuenta con sólida trayectoria en docencia y mentoría de profesionales de salud.
+              </p>
+
+              <div class="w-full h-48 sm:h-60 md:h-72 lg:h-56 rounded-2xl overflow-hidden mt-4">
+                <img
+                  src="img/Jaime Chang.jpg"
+                  alt="Jaime Chang"
+                  class="w-full h-full object-cover object-[center_30%]"
+                />
+              </div>
+            </div>
           </div>
+        </div>
+
+        <!-- Profesional (Cecilia) -->
+        <div
+          id="card-cecilia"
+          class="bg-white rounded-2xl p-6 lg:p-4 flex flex-col justify-between items-center text-center overflow-hidden transition-all duration-500 
+          h-full min-h-[420px] sm:min-h-[380px] md:min-h-[360px] lg:min-h-[260px]"
+        >
+          <h3 class="text-xl lg:text-lg font-bold mb-2 text-[#10cfc9]">Cecilia Ma</h3>
+          <p class="text-gray-700 text-sm lg:text-xs leading-relaxed lg:leading-snug mb-3">
+            Médica cirujana, administradora y economista de la salud con maestría en Gestión y Políticas Públicas. A lo largo de 34 años ha trabajado en más de 19 países como consultora y funcionaria pública, diseñando, asesorando e implementando proyectos de salud. Lideró el primer contrato de Asociación Público-Privada en el Ministerio de Salud y la ejecución de cuatro establecimientos mediante Obras por Impuesto. Presidió la comisión para el Plan de Atención Integral de Servicios Oncológicos (Plan Esperanza).
+          </p>
+
+          <button
+            id="btn-cecilia"
+            class="text-[#10cfc9] font-semibold text-sm lg:text-xs hover:underline focus:outline-none transition-colors"
+          >
+            Ver más
+          </button>
+
+          <div
+            id="extra-card-cecilia"
+            class="opacity-0 max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
+          >
+            <div class="mt-4 text-gray-700 text-sm lg:text-xs leading-relaxed lg:leading-snug space-y-3">
+              <p>
+                Como jefa del Seguro Integral de Salud fortaleció la auditoría de seguros y dirigió la transformación digital con la app “Asegúrate e infórmate”, tableros de gestión y ventanillas virtuales. Desde hace más de 25 años es docente de postgrado en varias universidades, formando líderes en salud pública y políticas sanitarias.
+              </p>
+
+              <div class="w-full h-48 sm:h-60 md:h-72 lg:h-56 rounded-2xl overflow-hidden mt-4">
+                <img
+                  src="img/Cecilia.jpg"
+                  alt="Jaime Chang"
+                  class="w-full h-full object-cover object-[center_10%]"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Profesional (Edgardo) -->
+        <div
+          id="card-edgardo"
+          class="bg-white rounded-2xl p-6 lg:p-4 flex flex-col justify-between items-center text-center overflow-hidden transition-all duration-500 
+          h-full min-h-[420px] sm:min-h-[380px] md:min-h-[360px] lg:min-h-[260px]"
+        >
+          <h3 class="text-xl lg:text-lg font-bold mb-2 text-[#10cfc9]">Edgardo Nepo</h3>
+          <p class="text-gray-700 text-sm lg:text-xs leading-relaxed lg:leading-snug mb-3">
+            Médico cirujano por la Universidad Nacional de Trujillo, especializado en Epidemiología (USIL) y formación en liderazgo y gestión pública (OPS/OMS, ENAP). Diplomado en Administración de Empresas de Salud y Epidemiología Aplicada. Egresado de la maestría en Epidemiología de la UNMSM. Fue Oficial Técnico del proyecto LHSS–USAID y consultor nacional en enfermedades transmisibles para OPS/OMS Perú.
+          </p>
+
+          <button
+            id="btn-edgardo"
+            class="text-[#10cfc9] font-semibold text-sm lg:text-xs hover:underline focus:outline-none transition-colors"
+          >
+            Ver más
+          </button>
+
+          <div
+            id="extra-card-edgardo"
+            class="opacity-0 max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
+          >
+            <div class="mt-4 text-gray-700 text-sm lg:text-xs leading-relaxed lg:leading-snug space-y-3">
+              <p>
+                 Se desempeñó como Secretario de Coordinación del Consejo Nacional de Salud, asesor ministerial y especialista en reforma del sector salud. También integró la Superintendencia de Entidades Prestadoras de Salud y ha gestionado proyectos de fortalecimiento institucional. Actualmente es profesor de Salud Pública en la Escuela de Medicina de la Universidad Peruana de Ciencias Aplicadas (UPC), impartiendo cursos en epidemiología y políticas sanitarias.
+              </p>
+
+              <div class="w-full h-48 sm:h-60 md:h-72 lg:h-56 rounded-2xl overflow-hidden mt-4">
+                <img
+                  src="img/Edgardo Nepo.jpg"
+                  alt="Jaime Chang"
+                  class="w-full h-full object-cover object-[center_10%]"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Profesional (Margarita) -->
+        <div
+          id="card-margarita"
+          class="bg-white rounded-2xl p-6 lg:p-4 flex flex-col justify-between items-center text-center overflow-hidden transition-all duration-500 
+          h-full min-h-[420px] sm:min-h-[380px] md:min-h-[360px] lg:min-h-[260px]"
+        >
           <h3 class="text-xl lg:text-lg font-bold mb-2 text-[#10cfc9]">Margarita Petrera</h3>
-          <p class="text-gray-700 text-sm lg:text-xs leading-relaxed lg:leading-snug">
-            Socióloga, economista y Doctora en Salud Pública. Exfuncionaria de OPS/OMS Perú en políticas de salud, gestión y seguros. Fue jefa del Proyecto Observatorio de la Salud del CIES.
+          <p class="text-gray-700 text-sm lg:text-xs leading-relaxed lg:leading-snug mb-3">
+            Socióloga, economista y magíster en Economía (PUCP), doctora en Salud Pública (UPCH). Exfuncionaria de la OPS/OMS en Perú, en políticas, gestión de seguros y economía de la salud. Fue jefa del Observatorio de la Salud en el Consorcio de Investigación Económica y Social. Como docente asociada en la Facultad de Salud Pública y Administración de la UPCH y en el posgrado de Economía de la PUCP, ha formado profesionales en análisis de políticas y financiamiento en salud.
           </p>
+
+          <button
+            id="btn-margarita"
+            class="text-[#10cfc9] font-semibold text-sm lg:text-xs hover:underline focus:outline-none transition-colors"
+          >
+            Ver más
+          </button>
+
+          <div
+            id="extra-card-margarita"
+            class="opacity-0 max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
+          >
+            <div class="mt-4 text-gray-700 text-sm lg:text-xs leading-relaxed lg:leading-snug space-y-3">
+              <p>
+                 Consultora senior en evaluación de proyectos y asistencia técnica para organismos nacionales e internacionales en Perú y América Latina. Autora de numerosas publicaciones en libros y revistas indexadas.
+              </p>
+
+              <div class="w-full h-48 sm:h-60 md:h-72 lg:h-56 rounded-2xl overflow-hidden mt-4">
+                <img
+                  src="img/Margarita Petrera.jpg"
+                  alt="Jaime Chang"
+                  class="w-full h-full object-cover object-[center_10%]"
+                />
+              </div>
+            </div>
+          </div>
         </div>
 
-        <!-- Profesional -->
-        <div class="bg-white rounded-2xl p-6 lg:p-4 flex flex-col items-center text-center">
-          <div class="w-full h-48 sm:h-60 md:h-72 lg:h-56 rounded-2xl overflow-hidden mb-4">
-            <img src="img/Augusto Portocarrero.jpg" alt="Augusto Portocarrero" class="w-full h-full object-cover">
-          </div>
+        <!-- Profesional (Augusto) -->
+        <div
+          id="card-augusto"
+          class="bg-white rounded-2xl p-6 lg:p-4 flex flex-col justify-between items-center text-center overflow-hidden transition-all duration-500 
+          h-full min-h-[420px] sm:min-h-[380px] md:min-h-[360px] lg:min-h-[260px]"
+        >
           <h3 class="text-xl lg:text-lg font-bold mb-2 text-[#10cfc9]">Augusto Portocarrero</h3>
-          <p class="text-gray-700 text-sm lg:text-xs leading-relaxed lg:leading-snug">
-            Economista y Magíster en Ciencias Políticas con amplia trayectoria en políticas públicas y análisis del gasto público desde 1988. Autor de múltiples publicaciones sobre desarrollo social.
+          <p class="text-gray-700 text-sm lg:text-xs leading-relaxed lg:leading-snug mb-3">
+            Economista y magíster en Ciencias Políticas con trayectoria desde 1988 en el análisis del impacto de políticas económicas y laborales en las condiciones de vida de la población. Desde 1995 se especializa en gasto público y formulación de políticas, con varias publicaciones en estos temas. Consultor internacional en Cuentas de Salud, ha diseñado, gestionado y evaluado políticas públicas, planificación y presupuestos.
           </p>
+
+          <button
+            id="btn-augusto"
+            class="text-[#10cfc9] font-semibold text-sm lg:text-xs hover:underline focus:outline-none transition-colors"
+          >
+            Ver más
+          </button>
+
+          <div
+            id="extra-card-augusto"
+            class="opacity-0 max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
+          >
+            <div class="mt-4 text-gray-700 text-sm lg:text-xs leading-relaxed lg:leading-snug space-y-3">
+              <p>
+                Desempeñó funciones técnicas y estratégicas en la Presidencia del Consejo de Ministros, el Ministerio de Salud y el Ministerio de Trabajo y Promoción del Empleo. Su experiencia abarca análisis de financiamiento en salud y asesoría para reformas en sistemas de salud y protección social.
+              </p>
+
+              <div class="w-full h-48 sm:h-60 md:h-72 lg:h-56 rounded-2xl overflow-hidden mt-4">
+                <img
+                  src="img/Augusto Portocarrero.jpg"
+                  alt="Jaime Chang"
+                  class="w-full h-full object-cover object-[center_35%]"
+                />
+              </div>
+            </div>
+          </div>
         </div>
 
-        <!-- Profesional -->
-        <div class="bg-white rounded-2xl p-6 lg:p-4 flex flex-col items-center text-center">
-          <div class="w-full h-48 sm:h-60 md:h-72 lg:h-56 rounded-2xl overflow-hidden mb-4">
-            <img src="img/LuisSeminario.png" alt="Luis Seminario" class="w-full h-full object-cover">
-          </div>
+        <!-- Profesional (LuisSeminario) -->
+        <div
+          id="card-luis"
+          class="bg-white rounded-2xl p-6 lg:p-4 flex flex-col justify-between items-center text-center overflow-hidden transition-all duration-500 
+          h-full min-h-[420px] sm:min-h-[380px] md:min-h-[360px] lg:min-h-[260px]"
+        >
           <h3 class="text-xl lg:text-lg font-bold mb-2 text-[#10cfc9]">Luis Seminario</h3>
-          <p class="text-gray-700 text-sm lg:text-xs leading-relaxed lg:leading-snug">
-            Médico cirujano con Maestría en Salud Pública por Johns Hopkins. Exgerente de proyectos de USAID y exdirector general de la ENSAP. Amplia experiencia en gobernabilidad, financiamiento y salud materno-infantil.
+          <p class="text-gray-700 text-sm lg:text-xs leading-relaxed lg:leading-snug mb-3">
+            Médico cirujano con maestría en Salud Pública por la Universidad de Johns Hopkins. Fue gerente de proyectos en USAID (1993–2013), liderando iniciativas en epidemiología, gobernabilidad, financiamiento, recursos humanos y servicios de salud. En el Ministerio de Salud ocupó cargos directivos clave: Director General de Escuela Nacional de Salud Pública - ENSAP (2018–2022), de la Oficina General de Epidemiología, Vigilancia Epidemiológica, Programa ampliado de Inmunizaciones y programas materno-infantiles.
           </p>
-        </div>
 
-        <!-- Profesional -->
-        <div class="bg-white rounded-2xl p-6 lg:p-4 flex flex-col items-center text-center">
-          <div class="w-full h-48 sm:h-60 md:h-72 lg:h-56 rounded-2xl overflow-hidden mb-4">
-            <img src="img/Agustin Silva.jpg" alt="Agustin Silva" class="w-full h-full object-cover object-[center_65%]">
+          <button
+            id="btn-luis"
+            class="text-[#10cfc9] font-semibold text-sm lg:text-xs hover:underline focus:outline-none transition-colors"
+          >
+            Ver más
+          </button>
+
+          <div
+            id="extra-card-luis"
+            class="opacity-0 max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
+          >
+            <div class="mt-4 text-gray-700 text-sm lg:text-xs leading-relaxed lg:leading-snug space-y-3">
+              <p>
+                Asesoró a la alta dirección ministerial y dirigió el hospital de Cañete–Yauyos. En DESCO lideró proyectos comunitarios en San Juan de Lurigancho y áreas rurales. Combina gestión estratégica, investigación y fortalecimiento institucional, con énfasis en atención primaria y desarrollo comunitario.
+              </p>
+
+              <div class="w-full h-48 sm:h-60 md:h-72 lg:h-56 rounded-2xl overflow-hidden mt-4">
+                <img
+                  src="img/LuisSeminario.png"
+                  alt="Jaime Chang"
+                  class="w-full h-full object-cover object-[center_10%]"
+                />
+              </div>
+            </div>
           </div>
-          <h3 class="text-xl lg:text-lg font-bold mb-2 text-[#10cfc9]">Agustin Silva</h3>
-          <p class="text-gray-700 text-sm lg:text-xs leading-relaxed lg:leading-snug">
-            Abogado por la UNFV y magíster por la PUCP. Especialista en derecho público, gestión y políticas anticorrupción. Experto en gobernabilidad y elaboración de instrumentos de gestión estatal.
-          </p>
         </div>
 
-      </div>
+        <!-- Profesional (Agustin) -->
+        <div
+          id="card-agustin"
+          class="bg-white rounded-2xl p-6 lg:p-4 flex flex-col justify-between items-center text-center overflow-hidden transition-all duration-500 
+          h-full min-h-[420px] sm:min-h-[380px] md:min-h-[360px] lg:min-h-[260px]"
+        >
+          <h3 class="text-xl lg:text-lg font-bold mb-2 text-[#10cfc9]">Agustin Silva</h3>
+          <p class="text-gray-700 text-sm lg:text-xs leading-relaxed lg:leading-snug mb-3">
+            Abogado por la Universidad Nacional Federico Villarreal, egresado de la maestría y doctorado en Derecho por la PUCP. Becado en la Universidad Castilla-La Mancha para estudios sobre delitos contra la propiedad intelectual. Especialista en derecho constitucional, civil, administrativo, penal, laboral y de la salud. Experto en gestión pública, políticas anticorrupción, gobernabilidad y elaboración de documentos técnicos.
+          </p>
+
+          <button
+            id="btn-agustin"
+            class="text-[#10cfc9] font-semibold text-sm lg:text-xs hover:underline focus:outline-none transition-colors"
+          >
+            Ver más
+          </button>
+
+          <div
+            id="extra-card-agustin"
+            class="opacity-0 max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
+          >
+            <div class="mt-4 text-gray-700 text-sm lg:text-xs leading-relaxed lg:leading-snug space-y-3">
+              <p>
+                Ha sido Secretario General de SUSALUD y del SIS, gerente de Capital Humano en la Contraloría General y el SERNANP, y asesor en EsSalud, PCM, IGSS, MEF y MTC. Facilitador en políticas públicas, derechos en salud y presupuestos, con amplia experiencia en capacitación y consultoría jurídica.
+              </p>
+
+              <div class="w-full h-48 sm:h-60 md:h-72 lg:h-56 rounded-2xl overflow-hidden mt-4">
+                <img
+                  src="img/Agustin Silva.jpg"
+                  alt="Jaime Chang"
+                  class="w-full h-full object-cover object-[center_75%]"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <script>
+        const btn = document.getElementById("btn-jaime");
+        const extra = document.getElementById("extra-card-jaime");
+        const card = document.getElementById("card-jaime");
+        let open = false;
+
+        btn.addEventListener("click", () => {
+          open = !open;
+
+          if (open) {
+            // Abrir
+            card.classList.add("!max-h-[2000px]");
+            extra.classList.remove("opacity-0", "max-h-0", "mt-0");
+            extra.classList.add("opacity-100", "max-h-[1000px]", "mt-4");
+            btn.textContent = "Ver menos";
+          } else {
+            // Cerrar
+            card.classList.remove("!max-h-[2000px]");
+            card.classList.add("max-h-[360px]");
+            extra.classList.remove("opacity-100", "max-h-[1000px]", "mt-4");
+            extra.classList.add("opacity-0", "max-h-0", "mt-0");
+            btn.textContent = "Ver más";
+          }
+        });
+      </script>
+
+      <script>
+        const btnCecilia = document.getElementById("btn-cecilia");
+        const extraCecilia = document.getElementById("extra-card-cecilia");
+        const cardCecilia = document.getElementById("card-cecilia");
+        let openCecilia = false;
+
+        btnCecilia.addEventListener("click", () => {
+          openCecilia = !openCecilia;
+
+          if (openCecilia) {
+            // Abrir
+            cardCecilia.classList.add("!max-h-[2000px]");
+            extraCecilia.classList.remove("opacity-0", "max-h-0", "mt-0");
+            extraCecilia.classList.add("opacity-100", "max-h-[1000px]", "mt-4");
+            btnCecilia.textContent = "Ver menos";
+          } else {
+            // Cerrar
+            cardCecilia.classList.remove("!max-h-[2000px]");
+            cardCecilia.classList.add("max-h-[360px]");
+            extraCecilia.classList.remove("opacity-100", "max-h-[1000px]", "mt-4");
+            extraCecilia.classList.add("opacity-0", "max-h-0", "mt-0");
+            btnCecilia.textContent = "Ver más";
+          }
+        });
+      </script>
+
+      <script>
+        const btnEdgardo = document.getElementById("btn-edgardo");
+        const extraEdgardo = document.getElementById("extra-card-edgardo");
+        const cardEdgardo = document.getElementById("card-edgardo");
+        let openEdgardo = false;
+
+        btnEdgardo.addEventListener("click", () => {
+          openEdgardo = !openEdgardo;
+
+          if (openEdgardo) {
+            // Abrir
+            cardEdgardo.classList.add("!max-h-[2000px]");
+            extraEdgardo.classList.remove("opacity-0", "max-h-0", "mt-0");
+            extraEdgardo.classList.add("opacity-100", "max-h-[1000px]", "mt-4");
+            btnEdgardo.textContent = "Ver menos";
+          } else {
+            // Cerrar
+            cardEdgardo.classList.remove("!max-h-[2000px]");
+            cardEdgardo.classList.add("max-h-[360px]");
+            extraEdgardo.classList.remove("opacity-100", "max-h-[1000px]", "mt-4");
+            extraEdgardo.classList.add("opacity-0", "max-h-0", "mt-0");
+            btnEdgardo.textContent = "Ver más";
+          }
+        });
+      </script>
+
+      <script>
+        const btnMargarita = document.getElementById("btn-margarita");
+        const extraMargarita = document.getElementById("extra-card-margarita");
+        const cardMargarita = document.getElementById("card-margarita");
+        let openMargarita = false;
+
+        btnMargarita.addEventListener("click", () => {
+          openMargarita = !openMargarita;
+
+          if (openMargarita) {
+            cardMargarita.classList.add("!max-h-[2000px]");
+            extraMargarita.classList.remove("opacity-0", "max-h-0", "mt-0");
+            extraMargarita.classList.add("opacity-100", "max-h-[1000px]", "mt-4");
+            btnMargarita.textContent = "Ver menos";
+          } else {
+            cardMargarita.classList.remove("!max-h-[2000px]");
+            cardMargarita.classList.add("max-h-[360px]");
+            extraMargarita.classList.remove("opacity-100", "max-h-[1000px]", "mt-4");
+            extraMargarita.classList.add("opacity-0", "max-h-0", "mt-0");
+            btnMargarita.textContent = "Ver más";
+          }
+        });
+      </script>
+
+      <script>
+        const btnAugusto = document.getElementById("btn-augusto");
+        const extraAugusto = document.getElementById("extra-card-augusto");
+        const cardAugusto = document.getElementById("card-augusto");
+        let openAugusto = false;
+
+        btnAugusto.addEventListener("click", () => {
+          openAugusto = !openAugusto;
+
+          if (openAugusto) {
+            cardAugusto.classList.add("!max-h-[2000px]");
+            extraAugusto.classList.remove("opacity-0", "max-h-0", "mt-0");
+            extraAugusto.classList.add("opacity-100", "max-h-[1000px]", "mt-4");
+            btnAugusto.textContent = "Ver menos";
+          } else {
+            cardAugusto.classList.remove("!max-h-[2000px]");
+            cardAugusto.classList.add("max-h-[360px]");
+            extraAugusto.classList.remove("opacity-100", "max-h-[1000px]", "mt-4");
+            extraAugusto.classList.add("opacity-0", "max-h-0", "mt-0");
+            btnAugusto.textContent = "Ver más";
+          }
+        });
+      </script>
+
+      <script>
+        const btnLuis = document.getElementById("btn-luis");
+        const extraLuis = document.getElementById("extra-card-luis");
+        const cardLuis = document.getElementById("card-luis");
+        let openLuis = false;
+
+        btnLuis.addEventListener("click", () => {
+          openLuis = !openLuis;
+
+          if (openLuis) {
+            cardLuis.classList.add("!max-h-[2000px]");
+            extraLuis.classList.remove("opacity-0", "max-h-0", "mt-0");
+            extraLuis.classList.add("opacity-100", "max-h-[1000px]", "mt-4");
+            btnLuis.textContent = "Ver menos";
+          } else {
+            cardLuis.classList.remove("!max-h-[2000px]");
+            cardLuis.classList.add("max-h-[360px]");
+            extraLuis.classList.remove("opacity-100", "max-h-[1000px]", "mt-4");
+            extraLuis.classList.add("opacity-0", "max-h-0", "mt-0");
+            btnLuis.textContent = "Ver más";
+          }
+        });
+      </script>
+
+      <script>
+        const btnAgustin = document.getElementById("btn-agustin");
+        const extraAgustin = document.getElementById("extra-card-agustin");
+        const cardAgustin = document.getElementById("card-agustin");
+        let openAgustin = false;
+
+        btnAgustin.addEventListener("click", () => {
+          openAgustin = !openAgustin;
+
+          if (openAgustin) {
+            cardAgustin.classList.add("!max-h-[2000px]");
+            extraAgustin.classList.remove("opacity-0", "max-h-0", "mt-0");
+            extraAgustin.classList.add("opacity-100", "max-h-[1000px]", "mt-4");
+            btnAgustin.textContent = "Ver menos";
+          } else {
+            cardAgustin.classList.remove("!max-h-[2000px]");
+            cardAgustin.classList.add("max-h-[360px]");
+            extraAgustin.classList.remove("opacity-100", "max-h-[1000px]", "mt-4");
+            extraAgustin.classList.add("opacity-0", "max-h-0", "mt-0");
+            btnAgustin.textContent = "Ver más";
+          }
+        });
+      </script>
     </section>
   </main>
 
@@ -260,10 +621,10 @@
       <div>
         <h3 class="text-base font-bold text-[#F4C542] border-b border-[#F4C542] mb-4 pb-1">Ácerca de nosotros</h3>
         <ul class="space-y-2">
-          <li><a class="hover:underline" href="consultoria.html">Quiénes somos</a></li>
-          <li><a class="hover:underline" href="formacion.html">Que hacemos</a></li>
+          <li><a class="hover:underline" href="quienessomos.html">Quiénes somos</a></li>
+          <li><a class="hover:underline" href="quehacemos.html">Qué hacemos</a></li>
           <li><a class="hover:underline" href="politicas.html">Nuestros clientes</a></li>
-          <li><a class="hover:underline" href="asistencia.html">Contáctanos</a></li>
+          <li><a class="hover:underline" href="registro_evento.html">Contáctanos</a></li>
         </ul>
       </div>
 
@@ -271,8 +632,7 @@
       <div>
         <h3 class="text-base font-bold text-[#F4C542] border-b border-[#F4C542] mb-4 pb-1">De interés</h3>
         <ul class="space-y-2">
-          <li><a class="hover:underline" href="eventos.html">Eventos</a></li>
-          <li><a class="hover:underline" href="blog.html">Blog</a></li>
+          <li><a class="hover:underline" href="recursos.html">Recursos</a></li>
         </ul>
       </div>
 
