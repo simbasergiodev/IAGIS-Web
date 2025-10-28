@@ -11,15 +11,39 @@
     body {
       font-family: system-ui, sans-serif;
     }
-  </style>
+
+    .marquee-container {
+      overflow: hidden;
+      background-color: #00afaa;
+      white-space: nowrap;
+      padding: 8px 0;
+    }
+
+    .marquee {
+      display: inline-block;
+      white-space: nowrap;
+      animation: marquee 12s linear infinite;
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+</style>
+
 </head>
-<body class="relative min-h-screen bg-gradient-to-b from-[#0D1B2A] to-[#1B263B] text-white overflow-x-hidden">
+<body class="relative min-h-screen bg-gradient-to-b from-[#124968] to-[#0E1A29] text-white overflow-x-hidden">
 
   <!-- Banner superior -->
-  <div class="bg-[#00837b] text-[12px] sm:text-sm text-center py-2 px-2 sm:px-4 font-medium break-words">
-    Instituto de Análisis y Gestión
+  <div class="marquee-container text-white text-[12px] sm:text-sm font-medium">
+    <p class="marquee">
+      Instituto de Análisis y Gestión • Instituto de Análisis y Gestión • Instituto de Análisis y Gestión •
+    </p>
   </div>
-
   <!-- Header -->
   <header class="flex flex-col md:flex-row items-center justify-center md:justify-between px-4 sm:px-12 py-2 w-full">
     <!-- Logo -->
@@ -29,226 +53,170 @@
 
     <!-- Nav -->
     <nav class="flex flex-wrap justify-center md:justify-end space-x-4 sm:space-x-6 md:space-x-10 text-sm sm:text-lg md:ml-8 w-full md:w-auto">
-      <a class="hover:text-[#00C2CB]" href="quienessomos.html">Quienes somos</a>
-      <a class="hover:text-[#00C2CB]" href="quehacemos.html">Que hacemos</a>
+      <a class="hover:text-[#00C2CB]" href="quienessomos.html">Quiénes somos</a>
+      <a class="hover:text-[#00C2CB]" href="quehacemos.html">Qué hacemos</a>
       <a class="hover:text-[#00C2CB]" href="eventos.html">Eventos</a>
       <a class="hover:text-[#00C2CB]" href="informacion.html">Contáctanos</a>
     </nav>
   </header>
-
+  
 </div>
 </header>
-<section class="w-full max-w-5xl mx-auto bg-white text-[#0A2C40] rounded-lg shadow-lg p-10 mt-10 mb-10">
-<h1 class="text-4xl font-semibold mb-4">
-    Contáctanos
-   </h1>
-<p class="text-2xl font-bold text-[#0A2C40] mb-2">
-    ¿Buscas fortalecer la gestión en salud con evidencia y soporte técnico? Estamos para ayudarte.
-   </p>
-<p class="text-sm text-[#555] mb-6">
-    Ya sea que requieras orientación sobre nuestras actividades, propuestas de colaboración, formación especializada o soporte institucional, completa el formulario y cuéntanos cómo podemos contribuir a tus objetivos en salud .
-   </p>
-<div class="flex flex-col md:flex-row gap-8 mb-6">
-</div>
-<form class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-<div>
-<label class="block font-semibold mb-1">
-      Nombre:
-     </label>
-<input class="w-full border border-gray-300 p-2 rounded" type="text"/>
-</div>
-<div>
-<label class="block font-semibold mb-1">
-      Apellido: *
-     </label>
-<input class="w-full border border-gray-300 p-2 rounded" required="" type="text"/>
-</div>
-<div>
-<label class="block font-semibold mb-1">
-      Correo electrónico:
-     </label>
-<input class="w-full border border-gray-300 p-2 rounded" type="email"/>
-</div>
-<div>
-<label class="block font-semibold mb-1">
-      Teléfono: *
-     </label>
-<input class="w-full border border-gray-300 p-2 rounded" required="" type="tel"/>
-</div>
-<div>
-<label class="block font-semibold mb-1">
-      Tipo de consulta: *
-     </label>
-<select class="w-full border border-gray-300 p-2 rounded" required="">
-<option value="">
-       Seleccione...
-      </option>
-<option value="consultas">
-       Consultas institucionales
-      </option>
-<option value="formación">
-       Formación y capacitaciones
-      </option>
-<option value="acceso">
-       Acceso a contenidos o materiales
-      </option>
-<option value="investigación">
-       Investigación aplicada
-      </option>
-<option value="colaboración">
-       Colaboraciones técnicas
-      </option>
-</select>
-</div>
-<div>
-<label class="block font-semibold mb-1">
-      País: *
-     </label>
-<select class="w-full border border-gray-300 p-2 rounded" required="">
-<option value="">
-       Seleccione...
-      </option>
-<option value="peru">
-       Perú
-      </option>
-<option value="mexico">
-       México
-      </option>
-<option value="colombia">
-       Colombia
-      </option>
-</select>
-</div>
-<div class="md:col-span-2">
-<label class="block font-semibold mb-1">
-      Mensaje:
-     </label>
-<textarea class="w-full border border-gray-300 p-2 rounded" rows="4"></textarea>
-</div>
-<div class="md:col-span-2 text-xs text-gray-500">
-     Al enviar este formulario, acepto los
-     <a class="text-pink-600" href="#">
-      Términos de uso
-     </a>
-     y la
-     <a class="text-pink-600" href="#">
-      Política de privacidad
-     </a>
-     .
+  <section class="w-full max-w-5xl mx-auto bg-white text-[#0A2C40] rounded-lg shadow-lg p-10 mt-10 mb-20">
+  <h1 class="text-4xl font-semibold mb-4">
+      Contáctanos
+    </h1>
+  <p class="text-2xl font-bold text-[#0A2C40] mb-2">
+      ¿Buscas fortalecer la gestión en salud con evidencia y soporte técnico? Estamos para ayudarte.
+    </p>
+  <p class="text-sm text-[#555] mb-3">
+      Ya sea que requieras orientación sobre nuestras actividades, propuestas de colaboración, formación especializada o soporte institucional, completa el formulario y cuéntanos cómo podemos contribuir a tus objetivos en salud .
+    </p>
+  <div class="flex flex-col md:flex-row gap-8 mb-6">
+  </div>
+  <form class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+  <div>
+  <label class="block font-semibold mb-1">
+        Nombre:
+      </label>
+  <input class="w-full border border-gray-300 p-2 rounded" type="text"/>
+  </div>
+  <div>
+  <label class="block font-semibold mb-1">
+        Apellido: *
+      </label>
+  <input class="w-full border border-gray-300 p-2 rounded" required="" type="text"/>
+  </div>
+  <div>
+  <label class="block font-semibold mb-1">
+        Correo electrónico:
+      </label>
+  <input class="w-full border border-gray-300 p-2 rounded" type="email"/>
+  </div>
+  <div>
+  <label class="block font-semibold mb-1">
+        Teléfono: *
+      </label>
+  <input class="w-full border border-gray-300 p-2 rounded" required="" type="tel"/>
+  </div>
+  <div>
+  <label class="block font-semibold mb-1">
+        Tipo de consulta: *
+      </label>
+  <select class="w-full border border-gray-300 p-2 rounded" required="">
+  <option value="">
+        Seleccione...
+        </option>
+  <option value="consultas">
+        Consultas institucionales
+        </option>
+  <option value="formación">
+        Formación y capacitaciones
+        </option>
+  <option value="acceso">
+        Acceso a contenidos o materiales
+        </option>
+  <option value="investigación">
+        Investigación aplicada
+        </option>
+  <option value="colaboración">
+        Colaboraciones técnicas
+        </option>
+  </select>
+  </div>
+  <div>
+  <label class="block font-semibold mb-1">
+        País: *
+      </label>
+  <select class="w-full border border-gray-300 p-2 rounded" required="">
+  <option value="">
+        Seleccione...
+        </option>
+  <option value="peru">
+        Perú
+        </option>
+  <option value="mexico">
+        México
+        </option>
+  <option value="colombia">
+        Colombia
+        </option>
+  </select>
+  </div>
+  <div class="md:col-span-2">
+  <label class="block font-semibold mb-1">
+        Mensaje:
+      </label>
+  <textarea class="w-full border border-gray-300 p-2 rounded" rows="4"></textarea>
+  </div>
+  <div class="md:col-span-2 text-xs text-gray-500">
+      Al enviar este formulario, acepto los
+      <a class="text-pink-600" href="#">
+        Términos de uso
+      </a>
+      y la
+      <a class="text-pink-600" href="#">
+        Política de privacidad
+      </a>
+      .
+      </div>
+  <div class="md:col-span-2">
+  <button class="bg-pink-600 text-white px-6 py-2 rounded" type="submit">
+        Enviar
+      </button>
+  </div>
+  </form>
+  </section>
+  <!-- Footer -->
+  <footer class="relative z-30 w-full bg-[#002c45] text-white px-10 py-12">
+    <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-sm">
+      <!-- Logo -->
+      <a href="index.html" class="flex-shrink-0 mb-3 mt-3 md:mb-0 md:mt-3">
+        <img alt="IAGES" class="h-[60px] sm:h-[80px] cursor-pointer" src="img/logo_IAGES.svg"/>
+      </a>
+
+      <!-- Acerca de nosotros -->
+      <div>
+        <h3 class="text-base font-bold text-[#F4C542] border-b border-[#F4C542] mb-4 pb-1">Ácerca de nosotros</h3>
+        <ul class="space-y-2">
+          <li><a class="hover:underline" href="quienessomos.html">Quiénes somos</a></li>
+          <li><a class="hover:underline" href="quehacemos.html">Qué hacemos</a></li>
+          <li><a class="hover:underline" href="nuestrosclientes.html">Nuestros clientes</a></li>
+          <li><a class="hover:underline" href="informacion.html">Contáctanos</a></li>
+        </ul>
+      </div>
+
+      <!-- De interés -->
+      <div>
+        <h3 class="text-base font-bold text-[#F4C542] border-b border-[#F4C542] mb-4 pb-1">De interés</h3>
+        <ul class="space-y-2">
+          <li><a class="hover:underline" href="eventos.html">Eventos</a></li>
+          <li><a class="hover:underline" href="recursos.html">Recursos</a></li>
+        </ul>
+      </div>
+
+      <!-- Redes sociales -->
+      <div>
+        <h3 class="text-base font-bold text-[#F4C542] border-b border-[#F4C542] mb-4 pb-1">Síguenos</h3>
+        <div class="flex items-center space-x-5 mt-4">
+          <a href="https://x.com/iagesinstituto?s=11" class="hover:opacity-80 transition" aria-label="Xtwitter">
+            <img src="img/xtwitter.svg" alt="xtwitter" class="w-6 h-6">
+          </a>
+          <a href="https://www.instagram.com/iagesinstituto/" class="hover:opacity-80 transition" aria-label="Instagram">
+            <img src="img/instagram.svg" alt="Instagram" class="w-6 h-6">
+          </a>
+          </a>
+          <a href="https://www.linkedin.com/company/iages-institute/" class="hover:opacity-80 transition" aria-label="Linkedin">
+            <img src="img/linkedin.svg" alt="Linkedin" class="w-6 h-6">
+          </a>
+        </div>
+      </div>
     </div>
-<div class="md:col-span-2">
-<button class="bg-pink-600 text-white px-6 py-2 rounded" type="submit">
-      Enviar
-     </button>
-</div>
-</form>
-</section>
-<footer class="bg-[#1A2C44] text-white px-10 py-12">
-<div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-sm">
-<div>
-<h3 class="text-2xl font-bold mb-4">
-      IAGES
-     </h3>
-<p class="leading-6">
-      Av. Salaverry 1234
-      <br/>
-      Jesús María, Lima – Perú
-      <br/>
-      contacto@iages.org
-      <br/>
-      +51 1 234 5678
-     </p>
-</div>
-<div>
-<h3 class="text-base font-bold text-[#F4C542] border-b border-[#F4C542] mb-4">
-      Áreas de trabajo
-     </h3>
-<ul class="space-y-2">
-<li>
-<a class="hover:underline" href="consultoria.html">
-        Consultorías técnicas
-       </a>
-</li>
-<li>
-<a class="hover:underline" href="formacion.html">
-        Formación y capacitación
-       </a>
-</li>
-<li>
-<a class="hover:underline" href="politicas.html">
-        Evaluación de políticas
-       </a>
-</li>
-<li>
-<a class="hover:underline" href="asistencia.html">
-        Asistencia institucional
-       </a>
-</li>
-</ul>
-</div>
-<div>
-<h3 class="text-base font-bold text-[#F4C542] border-b border-[#F4C542] mb-4">
-      Institucional
-     </h3>
-<ul class="space-y-2">
-<li>
-<a class="hover:underline" href="nosotros.html">
-        Quiénes somos
-       </a>
-</li>
-<li>
-<a class="hover:underline" href="alianzas.html">
-        Alianzas
-       </a>
-</li>
-<li>
-<a class="hover:underline" href="equipo.html">
-        Equipo
-       </a>
-</li>
-<li>
-<a class="hover:underline" href="contacto.html">
-        Contáctanos
-       </a>
-</li>
-</ul>
-</div>
-<div>
-<h3 class="text-base font-bold text-[#F4C542] border-b border-[#F4C542] mb-4">
-      Resources
-     </h3>
-<ul class="space-y-2">
-<li>
-<a class="hover:underline" href="blog.html">
-        Blog
-       </a>
-</li>
-<li>
-<a class="hover:underline" href="webinar.html">
-        Webinars
-       </a>
-</li>
-<li>
-<a class="hover:underline" href="publicaciones.html">
-        Publicaciones
-       </a>
-</li>
-<li>
-<a class="hover:underline" href="documentos.html">
-        Documentos técnicos
-       </a>
-</li>
-<li>
-<a class="hover:underline" href="cursos.html">
-        Cursos y talleres
-       </a>
-</li>
-</ul>
-</div>
-</div>
-<div class="mt-10 border-t border-white/10 pt-4 text-center text-xs text-gray-400">
-    © 2025 IAGES – Investigación y Acción en Gestión de la Salud
-   </div>
-</footer>
+
+    <!-- Línea inferior (a todo el ancho) -->
+    <div class="mt-10 border-t border-white/10 pt-4 text-center text-xs text-gray-400 w-full">
+      © 2025 IAGES – Investigación y Acción en Gestión de la Salud
+    </div>
+  </footer>
 </body>
 </html>

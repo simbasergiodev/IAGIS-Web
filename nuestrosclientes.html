@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IAGES - Nuestros Clientes</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+    body {
+      font-family: system-ui, sans-serif;
+    }
+
+    .marquee-container {
+      overflow: hidden;
+      background-color: #00afaa;
+      white-space: nowrap;
+      padding: 8px 0;
+    }
+
+    .marquee {
+      display: inline-block;
+      white-space: nowrap;
+      animation: marquee 12s linear infinite;
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+</style>
+
+</head>
+<body class="relative min-h-screen bg-gradient-to-b from-[#08111C] to-[#0E1A29] text-white overflow-x-hidden">
+
+  <!-- Banner superior -->
+  <div class="marquee-container text-white text-[12px] sm:text-sm font-medium">
+    <p class="marquee">
+      Instituto de Análisis y Gestión • Instituto de Análisis y Gestión • Instituto de Análisis y Gestión •
+    </p>
+  </div>
+  
+  <!-- Header -->
+  <header class="sticky top-0 z-50 flex flex-col md:flex-row items-center justify-center md:justify-between px-4 sm:px-12 py-2 w-full bg-[#124968] shadow">
+    <!-- Logo -->
+    <a href="index.html" class="flex-shrink-0 mb-3 mt-3 md:mb-0 md:mt-3">
+      <img alt="IAGES" class="h-[60px] sm:h-[80px] cursor-pointer" src="img/logo_IAGES.svg"/>
+    </a>
+
+    <!-- Nav -->
+    <nav class="flex flex-wrap justify-center md:justify-end space-x-4 sm:space-x-6 md:space-x-10 text-sm sm:text-lg md:ml-8 w-full md:w-auto">
+      <a class="hover:text-[#00C2CB] text-white" href="quienessomos.html">Quiénes somos</a>
+      <a class="hover:text-[#00C2CB] text-white" href="quehacemos.html">Qué hacemos</a>
+      <a class="hover:text-[#00C2CB] text-white" href="eventos.html">Eventos</a>
+      <a class="hover:text-[#00C2CB] text-white" href="informacion.html">Contáctanos</a>
+    </nav>
+  </header>
+
+  <main class="flex flex-col w-full">
+
+    <!-- Hero Section -->
+    <section class="relative w-full h-[30vh] md:h-[40vh] lg:h-[70vh] flex items-center justify-start text-left overflow-hidden">
+      <!-- Imagen de fondo -->
+      <img src="img/banner_nuestros_clientes.png" alt="Nuestros_Clientes" 
+        class="absolute inset-0 w-full h-full object-cover 
+        object-[25%_center] sm:object-[55%_center] md:object-[50%_center] lg:object-center">
+
+      <!-- Filtro oscuro -->
+      <div class="absolute inset-0 bg-black/70"></div>
+
+      <!-- Título alineado a la izquierda -->
+      <div class="relative z-10 text-white px-20 sm:px-26">
+        <h1 class="text-4xl sm:text-6xl font-bold">Nuestros clientes</h1>
+      </div>
+    </section>
+
+    <!-- Section 1 -->
+    <section class="bg-[#0b3c5d] py-20 sm:px-12 text-white text-center">
+      <div class="max-w-4xl mx-auto px-6">
+
+        <!-- Párrafo -->
+        <p class="text-lg leading-relaxed">
+          Desde fines de 2017, el Instituto de Análisis y Gestión - IAGES ha brindado servicios especializados a diversas instituciones nacionales e internacionales.
+          <br><br>
+          Entre ellas destacan el Seguro Social de Salud – EsSalud, la Presidencia del Consejo de Ministros – PCM, la Organización Mundial de la Salud, la Universidad Johns Hopkins, la Cooperación Técnica Belga (a través del Programa de Apoyo a la Política de Seguro Universal de Salud en Perú SIS–SISTEC), Knowledge for Development, SALOG, IBT Group, clínica Good Hope, Johnson & Johnson y la Red de Administración de Salud, entre otras.
+          <br><br>
+        </p>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="bg-gray-200 py-16">
+      <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
+        <img src="img/Portada_Eventos.png" alt="DESCRIPCIÓN"
+            class="w-full h-96 sm:h-[28rem] md:h-[32rem] rounded-2xl shadow-lg object-cover">
+
+        <div class="md:ml-8">
+          <p class="text-gray-700 leading-relaxed">
+            Las consultorías realizadas incluyen el desarrollo de la sección Perú del estudio “Future Health Spending and Treatment Patterns in Latin America and the Caribbean”; la elaboración de un compendio de estudios, un documento de política y estrategia, y una hoja de ruta para la separación de funciones de prestación y aseguramiento en EsSalud; una propuesta de sostenibilidad y transición para el Objetivo de Desarrollo Sostenible: Cobertura Universal de Salud 2030; elaboración de recomendaciones de políticas públicas para la adquisición y logísitica de medicamentos; el diseño de un diplomado en Aseguramiento Universal de Salud; una metodología para la planificación multinivel de inversiones en agua y saneamiento; modelos normativos en nutrición y recursos humanos hospitalarios para la Superintendencia Nacional de Salud; guías de práctica clínica; evaluación y rediseño de planes de salud y de procesos clínicos; y la estructuración de dos Instituciones Administradoras de Fondos de Aseguramiento en Salud, entre otros proyectos estratégicos.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="relative z-30 w-full bg-[#002c45] text-white px-10 py-12">
+    <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-sm">
+      <!-- Logo -->
+      <a href="index.html" class="flex-shrink-0 mb-3 mt-3 md:mb-0 md:mt-3">
+        <img alt="IAGES" class="h-[60px] sm:h-[80px] cursor-pointer" src="img/logo_IAGES.svg"/>
+      </a>
+
+      <!-- Acerca de nosotros -->
+      <div>
+        <h3 class="text-base font-bold text-[#F4C542] border-b border-[#F4C542] mb-4 pb-1">Ácerca de nosotros</h3>
+        <ul class="space-y-2">
+          <li><a class="hover:underline" href="quienessomos.html">Quiénes somos</a></li>
+          <li><a class="hover:underline" href="quehacemos.html">Qué hacemos</a></li>
+          <li><a class="hover:underline" href="nuestrosclientes.html">Nuestros clientes</a></li>
+          <li><a class="hover:underline" href="informacion.html">Contáctanos</a></li>
+        </ul>
+      </div>
+
+      <!-- De interés -->
+      <div>
+        <h3 class="text-base font-bold text-[#F4C542] border-b border-[#F4C542] mb-4 pb-1">De interés</h3>
+        <ul class="space-y-2">
+          <li><a class="hover:underline" href="eventos.html">Eventos</a></li>
+          <li><a class="hover:underline" href="recursos.html">Recursos</a></li>
+        </ul>
+      </div>
+
+      <!-- Redes sociales -->
+      <div>
+        <h3 class="text-base font-bold text-[#F4C542] border-b border-[#F4C542] mb-4 pb-1">Síguenos</h3>
+        <div class="flex items-center space-x-5 mt-4">
+          <a href="https://x.com/iagesinstituto?s=11" class="hover:opacity-80 transition" aria-label="Xtwitter">
+            <img src="img/xtwitter.svg" alt="xtwitter" class="w-6 h-6">
+          </a>
+          <a href="https://www.instagram.com/iagesinstituto/" class="hover:opacity-80 transition" aria-label="Instagram">
+            <img src="img/instagram.svg" alt="Instagram" class="w-6 h-6">
+          </a>
+          </a>
+          <a href="https://www.linkedin.com/company/iages-institute/" class="hover:opacity-80 transition" aria-label="Linkedin">
+            <img src="img/linkedin.svg" alt="Linkedin" class="w-6 h-6">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Línea inferior (a todo el ancho) -->
+    <div class="mt-10 border-t border-white/10 pt-4 text-center text-xs text-gray-400 w-full">
+      © 2025 IAGES – Investigación y Acción en Gestión de la Salud
+    </div>
+  </footer>
+</body>
+</html>
