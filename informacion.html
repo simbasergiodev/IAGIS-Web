@@ -62,111 +62,129 @@
   
 </div>
 </header>
-  <section class="w-full max-w-5xl mx-auto bg-white text-[#0A2C40] rounded-lg shadow-lg p-10 mt-10 mb-20">
+<section class="w-full max-w-5xl mx-auto bg-white text-[#0A2C40] rounded-lg shadow-lg p-10 mt-10 mb-20">
   <h1 class="text-4xl font-semibold mb-4">
-      Contáctanos
-    </h1>
+    Contáctanos
+  </h1>
   <p class="text-2xl font-bold text-[#0A2C40] mb-2">
-      ¿Buscas fortalecer la gestión en salud con evidencia y soporte técnico? Estamos para ayudarte.
-    </p>
+    ¿Buscas fortalecer la gestión en salud con evidencia y soporte técnico? Estamos para ayudarte.
+  </p>
   <p class="text-sm text-[#555] mb-3">
-      Ya sea que requieras orientación sobre nuestras actividades, propuestas de colaboración, formación especializada o soporte institucional, completa el formulario y cuéntanos cómo podemos contribuir a tus objetivos en salud .
-    </p>
-  <div class="flex flex-col md:flex-row gap-8 mb-6">
-  </div>
-  <form class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-  <div>
-  <label class="block font-semibold mb-1">
-        Nombre:
-      </label>
-  <input class="w-full border border-gray-300 p-2 rounded" type="text"/>
-  </div>
-  <div>
-  <label class="block font-semibold mb-1">
-        Apellido: *
-      </label>
-  <input class="w-full border border-gray-300 p-2 rounded" required="" type="text"/>
-  </div>
-  <div>
-  <label class="block font-semibold mb-1">
-        Correo electrónico:
-      </label>
-  <input class="w-full border border-gray-300 p-2 rounded" type="email"/>
-  </div>
-  <div>
-  <label class="block font-semibold mb-1">
-        Teléfono: *
-      </label>
-  <input class="w-full border border-gray-300 p-2 rounded" required="" type="tel"/>
-  </div>
-  <div>
-  <label class="block font-semibold mb-1">
-        Tipo de consulta: *
-      </label>
-  <select class="w-full border border-gray-300 p-2 rounded" required="">
-  <option value="">
-        Seleccione...
-        </option>
-  <option value="consultas">
-        Consultas institucionales
-        </option>
-  <option value="formación">
-        Formación y capacitaciones
-        </option>
-  <option value="acceso">
-        Acceso a contenidos o materiales
-        </option>
-  <option value="investigación">
-        Investigación aplicada
-        </option>
-  <option value="colaboración">
-        Colaboraciones técnicas
-        </option>
-  </select>
-  </div>
-  <div>
-  <label class="block font-semibold mb-1">
-        País: *
-      </label>
-  <select class="w-full border border-gray-300 p-2 rounded" required="">
-  <option value="">
-        Seleccione...
-        </option>
-  <option value="peru">
-        Perú
-        </option>
-  <option value="mexico">
-        México
-        </option>
-  <option value="colombia">
-        Colombia
-        </option>
-  </select>
-  </div>
-  <div class="md:col-span-2">
-  <label class="block font-semibold mb-1">
-        Mensaje:
-      </label>
-  <textarea class="w-full border border-gray-300 p-2 rounded" rows="4"></textarea>
-  </div>
-  <div class="md:col-span-2 text-xs text-gray-500">
+    Ya sea que requieras orientación sobre nuestras actividades, propuestas de colaboración, formación especializada o soporte institucional, completa el formulario y cuéntanos cómo podemos contribuir a tus objetivos en salud.
+  </p>
+
+  <div class="flex flex-col md:flex-row gap-8 mb-6"></div>
+
+  <!-- FORMULARIO CONECTADO A FORMSPREE -->
+  <form 
+    action="https://formspree.io/f/mjkpnzjd" 
+    method="POST" 
+    class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm"
+  >
+    <div>
+      <label class="block font-semibold mb-1">Nombre:</label>
+      <input 
+        name="nombre"
+        class="w-full border border-gray-300 p-2 rounded"
+        type="text"
+        required
+      />
+    </div>
+
+    <div>
+      <label class="block font-semibold mb-1">Apellido: *</label>
+      <input 
+        name="apellido"
+        class="w-full border border-gray-300 p-2 rounded"
+        type="text"
+        required
+      />
+    </div>
+
+    <div>
+      <label class="block font-semibold mb-1">Correo electrónico:</label>
+      <input 
+        name="correo"
+        class="w-full border border-gray-300 p-2 rounded"
+        type="email"
+        required
+      />
+    </div>
+
+    <div>
+      <label class="block font-semibold mb-1">Teléfono: *</label>
+      <input 
+        name="telefono"
+        class="w-full border border-gray-300 p-2 rounded"
+        type="tel"
+        required
+      />
+    </div>
+
+    <div>
+      <label class="block font-semibold mb-1">Tipo de consulta: *</label>
+      <select 
+        name="tipo_consulta"
+        class="w-full border border-gray-300 p-2 rounded"
+        required
+      >
+        <option value="">Seleccione...</option>
+        <option value="consultas">Consultas institucionales</option>
+        <option value="formación">Formación y capacitaciones</option>
+        <option value="acceso">Acceso a contenidos o materiales</option>
+        <option value="investigación">Investigación aplicada</option>
+        <option value="colaboración">Colaboraciones técnicas</option>
+      </select>
+    </div>
+
+    <div>
+      <label class="block font-semibold mb-1">País: *</label>
+      <select 
+        name="pais"
+        class="w-full border border-gray-300 p-2 rounded"
+        required
+      >
+        <option value="">Seleccione...</option>
+        <option value="Perú">Perú</option>
+        <option value="México">México</option>
+        <option value="Colombia">Colombia</option>
+      </select>
+    </div>
+
+    <div class="md:col-span-2">
+      <label class="block font-semibold mb-1">Mensaje:</label>
+      <textarea 
+        name="mensaje"
+        class="w-full border border-gray-300 p-2 rounded"
+        rows="4"
+        required
+      ></textarea>
+    </div>
+
+    <div class="md:col-span-2 text-xs text-gray-500">
       Al enviar este formulario, acepto los
-      <a class="text-pink-600" href="#">
-        Términos de uso
-      </a>
+      <a class="text-pink-600" href="#">Términos de uso</a>
       y la
-      <a class="text-pink-600" href="#">
-        Política de privacidad
-      </a>
-      .
-      </div>
-  <div class="md:col-span-2">
-  <button class="bg-pink-600 text-white px-6 py-2 rounded" type="submit">
+      <a class="text-pink-600" href="#">Política de privacidad</a>.
+    </div>
+
+    <!-- Campo opcional: Asunto del correo -->
+    <input type="hidden" name="_subject" value="Nuevo mensaje desde la web">
+
+    <!-- Campo opcional: redirección tras envío -->
+    <!-- <input type="hidden" name="_next" value="https://tusitio.com/gracias.html"> -->
+
+    <div class="md:col-span-2">
+      <button 
+        class="bg-pink-600 text-white px-6 py-2 rounded hover:bg-pink-700 transition"
+        type="submit"
+      >
         Enviar
       </button>
-  </div>
+    </div>
   </form>
-  </section>
+</section>
+
   <!-- Footer -->
   <footer class="relative z-30 w-full bg-[#002c45] text-white px-10 py-12">
     <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-sm">
