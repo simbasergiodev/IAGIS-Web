@@ -45,26 +45,66 @@
     </p>
   </div>
   
-  <!-- Header -->
-  <header class="sticky top-0 z-50 flex flex-col md:flex-row items-center justify-center md:justify-between px-4 sm:px-12 py-2 w-full bg-[#124968] shadow">
-    <!-- Logo -->
-    <a href="index.html" class="flex-shrink-0 mb-3 mt-3 md:mb-0 md:mt-3">
-      <img alt="IAGES" class="h-[60px] sm:h-[80px] cursor-pointer" src="img/logo_IAGES.svg"/>
-    </a>
+<!-- Header -->
+  <header class="sticky top-0 z-50 w-full bg-[#124968] shadow px-4 sm:px-12 py-2">
+    <div class="flex flex-row items-center justify-between w-full md:max-w-[1400px] md:mx-auto">
+  
+      <!-- Logo -->
+      <a href="index.html" class="flex-shrink-0 mt-3 mb-3">
+        <img alt="IAGES" class="h-[60px] sm:h-[80px] cursor-pointer" src="img/logo_IAGES.svg"/>
+      </a>
 
-    <!-- Nav -->
-    <nav class="flex flex-wrap justify-center md:justify-end space-x-4 sm:space-x-6 md:space-x-10 text-sm sm:text-lg md:ml-8 w-full md:w-auto">
-      <a class="hover:text-[#00C2CB] text-white" href="quienessomos.html">Quiénes somos</a>
-      <a class="hover:text-[#00C2CB] text-white" href="quehacemos.html">Qué hacemos</a>
-      <a class="hover:text-[#00C2CB] text-white" href="eventos.html">Eventos</a>
-      <a class="hover:text-[#00C2CB] text-white" href="informacion.html">Contáctanos</a>
-    </nav>
+      <!-- Botón Hamburguesa SOLO en móvil -->
+      <button id="menuBtn" class="md:hidden ml-auto text-white text-3xl">
+        ☰
+      </button>
+
+      <!-- Nav DESKTOP (igual a tu diseño actual) -->
+      <nav class="hidden md:flex flex-wrap justify-end space-x-4 sm:space-x-6 md:space-x-10 text-sm sm:text-lg md:ml-8">
+        <a class="hover:text-[#00C2CB] text-white" href="quienessomos.html">Quiénes somos</a>
+        <a class="hover:text-[#00C2CB] text-white" href="quehacemos.html">Qué hacemos</a>
+        <a class="hover:text-[#00C2CB] text-white" href="eventos.html">Eventos</a>
+        <a class="hover:text-[#00C2CB] text-white" href="recursos.html">Recursos</a>
+        <a class="hover:text-[#00C2CB] text-white" href="informacion.html">Contáctanos</a>
+      </nav>
+    </div>
+
+    <!-- PANEL LATERAL FULLSCREEN MÓVIL (idéntico al index) -->
+    <div id="mobileMenu" class="fixed top-0 left-0 w-full h-full bg-[#00afaa] text-white z-50 translate-x-full transition-transform duration-300 md:hidden overflow-x-hidden">
+
+      <!-- Botón cerrar -->
+      <button id="closeMenu" class="absolute top-4 left-4 text-3xl text-white">×</button>
+
+      <div class="flex flex-col items-center mt-20 space-y-6 text-lg font-medium">
+        <a href="index.html">Home</a>
+        <a href="quienessomos.html">Quiénes somos</a>
+        <a href="quehacemos.html">Qué hacemos</a>
+        <a href="eventos.html">Eventos</a>
+        <a href="recursos.html">Recursos</a>
+        <a href="informacion.html">Contáctanos</a>
+      </div>
+
+      <div class="w-10/12 mx-auto mt-10 border-b border-white/40"></div>
+
+      <div class="flex justify-center gap-4 mt-10 text-2xl">
+        <a href="https://x.com/iagesinstituto?s=11" class="hover:opacity-80 transition" aria-label="Xtwitter">
+          <img src="img/xtwitter.svg" alt="xtwitter" class="w-6 h-6">
+        </a>
+        <a href="https://www.instagram.com/iagesinstituto/" class="hover:opacity-80 transition" aria-label="Instagram">
+          <img src="img/instagram.svg" alt="Instagram" class="w-6 h-6">
+        </a>
+        <a href="https://www.linkedin.com/company/iages-institute/" class="hover:opacity-80 transition" aria-label="Linkedin">
+          <img src="img/linkedin.svg" alt="Linkedin" class="w-6 h-6">
+        </a>
+      </div>
+
+    </div>
   </header>
 
   <main class="flex flex-col w-full">
 
     <!-- Hero Section -->
-    <section class="relative w-full h-[30vh] md:h-[40vh] lg:h-[70vh] flex items-center justify-start text-left overflow-hidden">
+    <section class="relative w-full h-[30vh] md:h-[40vh] lg:h-[30vh] flex items-center justify-start text-left overflow-hidden">
       <!-- Imagen de fondo -->
       <img src="img/banner_quienes_somos.png" alt="IAGES Quiénes Somos" 
         class="absolute inset-0 w-full h-full object-cover 
@@ -74,13 +114,13 @@
       <div class="absolute inset-0 bg-black/70"></div>
 
       <!-- Título alineado a la izquierda -->
-      <div class="relative z-10 text-white px-20 sm:px-26">
+      <div class="relative z-10 text-white px-20 sm:px-26 lg:px-60">
         <h1 class="text-4xl sm:text-6xl font-bold">Quiénes somos</h1>
       </div>
     </section>
 
     <!-- Section 1 -->
-    <section class="bg-[#0a3d3f] py-20 text-white text-center">
+    <section class="bg-[#0b3c5d] py-20 text-white text-center">
       <div class="max-w-4xl mx-auto px-6">
         <!-- Título con barrita decorativa -->
         <div class="inline-block mb-6">
@@ -117,11 +157,17 @@
         <div class="md:ml-6">
           <h3 class="text-xl font-bold mb-2 text-[#10cfc9]">Midori de Habich</h3>
           <p class="text-gray-700 leading-snug text-xs whitespace-pre-line">
-            Economista con más de 25 años de experiencia en políticas públicas. Fue Ministra de Salud del Perú (2012-2014), liderando la reforma del sector hacia la cobertura universal.
+            Economista con más de 25 años de experiencia en investigación, diseño e implementación de políticas públicas. 
+
+            Como Ministra de Salud del Perú (julio 2012 - noviembre 2014), lideró una reforma del sector orientada a lograr la cobertura universal en salud. Entre 2019 y 2025, se desempeñó como Directora Técnica del proyecto global Local Health System Sustainability (LHSS) de USAID.
+            
+            Entre 1995 y 2012, estuvo a cargo de diversos proyectos de salud financiados por USAID en Perú, brindando asistencia técnica para el desarrollo de sistemas de gestión y financiamiento en el sector.
+            
+            Además, fue Jefa del Departamento de Investigación Económica y Profesional Especializado en el Departamento de Estudios Sociales del Banco Central de Reserva del Perú.
             
             Entre 2019 y 2025 fue Directora Técnica del proyecto global LHSS de USAID y previamente lideró proyectos financiados por esta agencia para fortalecer la gestión y el financiamiento en salud.
             
-            Además, fue Jefa del Departamento de Investigación Económica del BCRP y posee una maestría en Política y Planificación Económica por la Universidad Erasmus.
+            Posee una maestría en Política y Planificación Económica del Instituto de Estudios Sociales de la Universidad Erasmus, Países Bajos.
           </p>
         </div>
       </div>
@@ -137,11 +183,13 @@
         <div class="md:ml-6">
           <h3 class="text-xl font-bold mb-2 text-[#10cfc9]">Paulina Giusti</h3>
           <p class="text-gray-700 leading-snug text-xs whitespace-pre-line">
-            Pediatra con más de 30 años de experiencia en gestión y desarrollo de políticas de salud. Fue Jefa de Proyecto en Perú y Asesora Técnica Senior del proyecto LHSS de USAID (2021-2025).
+            Pediatra con más de 30 años de experiencia en gestión, atención clínica y desarrollo de políticas en el sector salud en Perú.
             
-            Como Viceministra de Salud (2014-2015), lideró el diseño de la reforma sanitaria y dirigió el programa PARSALUD II financiado por BID y BM.
+            Fue Jefe de Proyecto en Perú y Asesora Técnica Senior para Honduras, Colombia, República Dominicana y Jordania del proyecto LHSS de USAID (2021-2025). Como Viceministra de Salud (2014-2015) y Jefa de Gabinete (2012-2014), participó activamente en el diseño e implementación de la reforma del sector salud.
+
+            Dirigió el Programa de Apoyo a la Reforma del Sector Salud (PARSALUD II), financiado por BID y BM (2008-2012), enfocado en mejorar la salud maternoinfantil en las regiones más vulnerables del país.            
             
-            También fue asesora del MINSA, Intendenta de Regulación en la Superintendencia de Entidades Prestadoras de Salud y obtuvo una maestría en Salud Pública en la Universidad Johns Hopkins.
+            Antes se desempeñó como asesora de la Alta Dirección del MINSA, consultora en aseguramiento de salud e Intendenta de Regulación en la Superintendencia de Entidades Prestadoras de Salud. También fue Jefa del Servicio de Pediatría en el Hospital D.A. Carrión. Cuenta con una maestría en Salud Pública de la Universidad Johns Hopkins, EE.UU.
           </p>
         </div>
       </div>
@@ -156,20 +204,38 @@
         </div>
         <div class="md:ml-6">
           <h3 class="text-xl font-bold mb-2 text-[#10cfc9]">Flor de María Phillips</h3>
-          <p class="text-gray-700 leading-snug text-xs whitespace-pre-line">
-            Médico con más de 30 años de experiencia directiva en instituciones de salud públicas y privadas. Fue Jefa del SIS, FISSAL y Presidenta de SISOL Salud.
+          <p class="text-gray-700 leading-snug text-xs whitespace-pre-line">           
+            Médico especialista en Administración de Salud por la UPCH, con más de 30 años de experiencia en posiciones directivas dentro de organizaciones públicas y privadas dedicadas a la supervisión, financiamiento y prestación de servicios de salud, tanto a nivel nacional como internacional. Entre 2021 y 2024, ocupó diversos cargos, incluyendo la Jefatura del Seguro Integral de Salud (SIS) y FISSAL, así como la Presidencia de SISOL Salud.
             
-            Como Superintendenta Nacional de Salud (2012-2016), lideró la creación de SUSALUD. Anteriormente fue Gerente en EsSalud y Pacífico EPS, enfocada en gestión del riesgo y control de costos.
+            Como Superintendente Nacional de Salud (2012- 2016), lideró el diseño y gestión de SUSALUD para garantizar la protección de los derechos en salud en Perú. Además, ha sido Gerente de Servicios Hospitalarios en IPSS (hoy EsSalud) y Gerente de Salud en Pacífico Compañía de Seguros y EPS, con responsabilidades en gestión del riesgo, control de costos de siniestros y auditoría médica.
             
-            Su trayectoria abarca también la práctica médica y el desarrollo de políticas sanitarias nacionales.
+            A lo largo de su trayectoria, ha ejercido como médica en diversas instituciones prestadoras de salud y ha ocupado roles clave en el diseño de políticas sanitarias. Fue Presidenta de SPEAS y actualmente dirige el MBA en Salud de la UPC. Es Auditora Médica, Auditora ISO y posee un MBA por la Universidad de Montreal, Quebec, Canadá
           </p>
         </div>
       </div>
     </section>
 
+    <!-- Section 2 -->
+    <section class="bg-[#0b3c5d] py-20 text-white text-center">
+      <div class="max-w-4xl mx-auto px-6">
+        <!-- Título con barrita decorativa -->
+        <div class="inline-block mb-6">
+          <h2 class="text-3xl font-bold mb-3">Profesionales asociados</h2>
+          <div class="w-20 h-1 bg-[#10cfc9] mx-auto rounded-full"></div>
+        </div>
+
+        <!-- Párrafo -->
+        <p class="text-lg leading-relaxed">
+          Nuestros asociados son profesionales de alto nivel, reconocidos en el ámbito de la salud, pública y privada, con amplia experiencia en sistemas de salud, en diversos niveles descentralizados.
+          <br><br>
+          Compartimos la visión de construir un sistema de salud cada vez más justo, eficiente y centrado en las personas.
+        </p>
+      </div>
+    </section>
+
     <!-- Section 5: Profesionales asociados -->
     <section class="bg-gray-100 py-16">
-      <h2 class="text-3xl font-bold mb-12 text-[#10cfc9] text-center">Profesionales asociados</h2>
+      <h2 class="text-3xl font-bold mb-12 text-[#10cfc9] text-center">Lista de Asociados</h2>
 
       <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 items-start content-start">
 
@@ -578,5 +644,21 @@
       © 2025 IAGES – Investigación y Acción en Gestión de la Salud
     </div>
   </footer>
+
+  <script>
+  const menuBtn = document.getElementById("menuBtn");
+  const closeMenu = document.getElementById("closeMenu");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.remove("translate-x-full");
+    document.body.style.overflow = "hidden";
+  });
+
+  closeMenu.addEventListener("click", () => {
+    mobileMenu.classList.add("translate-x-full");
+    document.body.style.overflow = "";
+  });
+</script>
 </body>
 </html>

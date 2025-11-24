@@ -45,26 +45,66 @@
     </p>
   </div>
   
-  <!-- Header -->
-  <header class="sticky top-0 z-50 flex flex-col md:flex-row items-center justify-center md:justify-between px-4 sm:px-12 py-2 w-full bg-[#124968] shadow">
-    <!-- Logo -->
-    <a href="index.html" class="flex-shrink-0 mb-3 mt-3 md:mb-0 md:mt-3">
-      <img alt="IAGES" class="h-[60px] sm:h-[80px] cursor-pointer" src="img/logo_IAGES.svg"/>
-    </a>
+<!-- Header -->
+  <header class="sticky top-0 z-50 w-full bg-[#124968] shadow px-4 sm:px-12 py-2">
+    <div class="flex flex-row items-center justify-between w-full md:max-w-[1400px] md:mx-auto">
+  
+      <!-- Logo -->
+      <a href="index.html" class="flex-shrink-0 mt-3 mb-3">
+        <img alt="IAGES" class="h-[60px] sm:h-[80px] cursor-pointer" src="img/logo_IAGES.svg"/>
+      </a>
 
-    <!-- Nav -->
-    <nav class="flex flex-wrap justify-center md:justify-end space-x-4 sm:space-x-6 md:space-x-10 text-sm sm:text-lg md:ml-8 w-full md:w-auto">
-      <a class="hover:text-[#00C2CB] text-white" href="quienessomos.html">Quiénes somos</a>
-      <a class="hover:text-[#00C2CB] text-white" href="quehacemos.html">Qué hacemos</a>
-      <a class="hover:text-[#00C2CB] text-white" href="eventos.html">Eventos</a>
-      <a class="hover:text-[#00C2CB] text-white" href="informacion.html">Contáctanos</a>
-    </nav>
+      <!-- Botón Hamburguesa SOLO en móvil -->
+      <button id="menuBtn" class="md:hidden ml-auto text-white text-3xl">
+        ☰
+      </button>
+
+      <!-- Nav DESKTOP (igual a tu diseño actual) -->
+      <nav class="hidden md:flex flex-wrap justify-end space-x-4 sm:space-x-6 md:space-x-10 text-sm sm:text-lg md:ml-8">
+        <a class="hover:text-[#00C2CB] text-white" href="quienessomos.html">Quiénes somos</a>
+        <a class="hover:text-[#00C2CB] text-white" href="quehacemos.html">Qué hacemos</a>
+        <a class="hover:text-[#00C2CB] text-white" href="eventos.html">Eventos</a>
+        <a class="hover:text-[#00C2CB] text-white" href="recursos.html">Recursos</a>
+        <a class="hover:text-[#00C2CB] text-white" href="informacion.html">Contáctanos</a>
+      </nav>
+    </div>
+
+    <!-- PANEL LATERAL FULLSCREEN MÓVIL (idéntico al index) -->
+    <div id="mobileMenu" class="fixed top-0 left-0 w-full h-full bg-[#00afaa] text-white z-50 translate-x-full transition-transform duration-300 md:hidden overflow-x-hidden">
+
+      <!-- Botón cerrar -->
+      <button id="closeMenu" class="absolute top-4 left-4 text-3xl text-white">×</button>
+
+      <div class="flex flex-col items-center mt-20 space-y-6 text-lg font-medium">
+        <a href="index.html">Home</a>
+        <a href="quienessomos.html">Quiénes somos</a>
+        <a href="quehacemos.html">Qué hacemos</a>
+        <a href="eventos.html">Eventos</a>
+        <a href="recursos.html">Recursos</a>
+        <a href="informacion.html">Contáctanos</a>
+      </div>
+
+      <div class="w-10/12 mx-auto mt-10 border-b border-white/40"></div>
+
+      <div class="flex justify-center gap-4 mt-10 text-2xl">
+        <a href="https://x.com/iagesinstituto?s=11" class="hover:opacity-80 transition" aria-label="Xtwitter">
+          <img src="img/xtwitter.svg" alt="xtwitter" class="w-6 h-6">
+        </a>
+        <a href="https://www.instagram.com/iagesinstituto/" class="hover:opacity-80 transition" aria-label="Instagram">
+          <img src="img/instagram.svg" alt="Instagram" class="w-6 h-6">
+        </a>
+        <a href="https://www.linkedin.com/company/iages-institute/" class="hover:opacity-80 transition" aria-label="Linkedin">
+          <img src="img/linkedin.svg" alt="Linkedin" class="w-6 h-6">
+        </a>
+      </div>
+
+    </div>
   </header>
 
   <main class="flex flex-col w-full">
 
     <!-- Hero Section -->
-    <section class="relative w-full h-[30vh] md:h-[40vh] lg:h-[70vh] flex items-center justify-start text-left overflow-hidden">
+    <section class="relative w-full h-[30vh] md:h-[40vh] lg:h-[30vh] flex items-center justify-start text-left overflow-hidden">
       <!-- Imagen de fondo -->
       <img src="img/banner_que_hacemos.png" alt="IAGES Quiénes Somos" 
         class="absolute inset-0 w-full h-full object-cover 
@@ -74,7 +114,7 @@
       <div class="absolute inset-0 bg-black/70"></div>
 
       <!-- Título alineado a la izquierda -->
-      <div class="relative z-10 text-white px-20 sm:px-26">
+      <div class="relative z-10 text-white px-20 sm:px-26 lg:px-60">
         <h1 class="text-4xl sm:text-6xl font-bold">Qué hacemos</h1>
       </div>
     </section>
@@ -99,7 +139,7 @@
             class="w-full h-96 sm:h-[28rem] md:h-[32rem] rounded-2xl shadow-lg object-cover">
 
         <div class="md:ml-8">
-          <h3 class="text-3xl font-bold mb-6 text-[#10cfc9]">Gobernanza en salud</h3>
+          <h3 class="text-3xl font-bold mb-6 text-[#10cfc9]">Fortalecimiento del sistema de salud</h3>
 
           <!-- Punto 1 -->
           <div class="flex items-start mb-6">
@@ -107,7 +147,7 @@
               <img src="img/Check.svg" alt="Check" class="w-full h-full">
             </span>
             <p class="text-gray-700 leading-relaxed">
-              Creación e implementación de procesos y mecanismos innovadores a través de los cuales las autoridades locales o regionales mejoran la preparación y respuesta a problemas de salud pública.
+              Evaluación colaborativa del desempeño del sistema de salud para apoyar cambios en las políticas para una mejora sostenible (productos farmacéuticos, gestión del seguro de salud, entre otros).
             </p>
           </div>
 
@@ -117,7 +157,7 @@
               <img src="img/Check.svg" alt="Check" class="w-full h-full">
             </span>
             <p class="text-gray-700 leading-relaxed">
-              Articulación intersectorial para la elaboración de políticas y la implementación de la respuesta del sistema de salud ante amenazas para la salud pública.
+              Involucramiento de partes interesadas relevantes para aprovechar recursos para el fortalecimiento del sistema de salud y abogar por cambios en las políticas.
             </p>
           </div>
 
@@ -127,7 +167,7 @@
               <img src="img/Check.svg" alt="Check" class="w-full h-full">
             </span>
             <p class="text-gray-700 leading-relaxed">
-              Fortalecimiento de la gobernanza del sistema de salud para apoyar políticas y normativa adecuadas y su implementación efectiva en todo el sector salud.
+              Apoyo a la articulación entre diferentes organizaciones públicas y privadas, así como organizaciones comunitarias, para facilitar la implementación de políticas multisectoriales.
             </p>
           </div>
 
@@ -137,7 +177,7 @@
               <img src="img/Check.svg" alt="Check" class="w-full h-full">
             </span>
             <p class="text-gray-700 leading-relaxed">
-              Diálogo de políticas con múltiples partes interesadas para catalizar el consenso político en torno a las políticas de salud, contribuyendo a la sostenibilidad de las iniciativas de mejora de la salud.
+              Apoyo técnico para fortalecer la prestación de servicios de salud, los servicios de salud pública y la participación comunitaria.
             </p>
           </div>
 
@@ -147,7 +187,7 @@
               <img src="img/Check.svg" alt="Check" class="w-full h-full">
             </span>
             <p class="text-gray-700 leading-relaxed">
-              Diseño, implementación y monitoreo de reformas en la descentralización del sector salud, basadas en principios de buena gobernanza, para generar la capacidad de las autoridades de salud nacionales, regionales y locales para planificar, presupuestar, financiar e implementar intervenciones y servicios de salud efectivos.
+              Apoyo para mejorar la organización y gestión de los laboratorios de vigilancia en salud pública.
             </p>
           </div>
         </div>
@@ -158,26 +198,26 @@
     <section class="bg-[#0b3c5d] pt-32 pb-36 lg:pb-48 px-6 relative z-10">
       <div class="max-w-6xl mx-auto text-center mb-12">
         <h2 class="text-3xl md:text-4xl font-semibold text-white">
-          Fortalecimiento del Sistema de Salud
+          Gobernanza en Salud
         </h2>
       </div>
 
       <!-- Grid de 2 columnas x 3 filas -->
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-6xl mx-auto">
         <div class="bg-[#145075] text-white p-6 rounded-2xl shadow-lg">
-          <p>Evaluación colaborativa del desempeño del sistema de salud para apoyar cambios en las políticas para una mejora sostenible (productos farmacéuticos, gestión del seguro de salud, entre otros).</p>
+          <p>Creación e implementación de procesos y mecanismos innovadores a través de los cuales las autoridades locales o regionales mejoran la preparación y respuesta a problemas de salud pública.</p>
         </div>
         <div class="bg-[#145075] text-white p-6 rounded-2xl shadow-lg">
-          <p>Involucramiento de partes interesadas relevantes para aprovechar recursos para el fortalecimiento del sistema de salud y abogar por cambios en las políticas.</p>
+          <p>Articulación intersectorial para la elaboración de políticas y la implementación de la respuesta del sistema de salud ante amenazas para la salud pública.</p>
         </div>
         <div class="bg-[#145075] text-white p-6 rounded-2xl shadow-lg">
-          <p>Apoyo a la articulación entre diferentes organizaciones públicas y privadas, así como organizaciones comunitarias, para facilitar la implementación de políticas multisectoriales.</p>
+          <p>Fortalecimiento de la gobernanza del sistema de salud para apoyar políticas y normativa adecuadas y su implementación efectiva en todo el sector salud.</p>
         </div>
         <div class="bg-[#145075] text-white p-6 rounded-2xl shadow-lg">
-          <p>Apoyo técnico para fortalecer la prestación de servicios de salud, los servicios de salud pública y la participación comunitaria.</p>
+          <p>Diálogo de políticas con múltiples partes interesadas para catalizar el consenso político en torno a las políticas de salud, contribuyendo a la sostenibilidad de las iniciativas de mejora de la salud.</p>
         </div>
         <div class="bg-[#145075] text-white p-6 rounded-2xl shadow-lg">
-          <p>Apoyo para mejorar la organización y gestión de los laboratorios de vigilancia en salud pública.</p>
+          <p>Diseño, implementación y monitoreo de reformas en la descentralización del sector salud, basadas en principios de buena gobernanza, para generar la capacidad de las autoridades de salud nacionales, regionales y locales para planificar, presupuestar, financiar e implementar intervenciones y servicios de salud efectivos.</p>
         </div>
       </div>
     </section>
@@ -325,5 +365,20 @@
       © 2025 IAGES – Investigación y Acción en Gestión de la Salud
     </div>
   </footer>
+  <script>
+  const menuBtn = document.getElementById("menuBtn");
+  const closeMenu = document.getElementById("closeMenu");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.remove("translate-x-full");
+    document.body.style.overflow = "hidden";
+  });
+
+  closeMenu.addEventListener("click", () => {
+    mobileMenu.classList.add("translate-x-full");
+    document.body.style.overflow = "";
+  });
+</script>
 </body>
 </html>

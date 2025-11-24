@@ -45,26 +45,66 @@
     </p>
   </div>
   
-  <!-- Header -->
-  <header class="sticky top-0 z-50 flex flex-col md:flex-row items-center justify-center md:justify-between px-4 sm:px-12 py-2 w-full bg-[#124968] shadow">
-    <!-- Logo -->
-    <a href="index.html" class="flex-shrink-0 mb-3 mt-3 md:mb-0 md:mt-3">
-      <img alt="IAGES" class="h-[60px] sm:h-[80px] cursor-pointer" src="img/logo_IAGES.svg"/>
-    </a>
+<!-- Header -->
+  <header class="sticky top-0 z-50 w-full bg-[#124968] shadow px-4 sm:px-12 py-2">
+    <div class="flex flex-row items-center justify-between w-full md:max-w-[1400px] md:mx-auto">
+  
+      <!-- Logo -->
+      <a href="index.html" class="flex-shrink-0 mt-3 mb-3">
+        <img alt="IAGES" class="h-[60px] sm:h-[80px] cursor-pointer" src="img/logo_IAGES.svg"/>
+      </a>
 
-    <!-- Nav -->
-    <nav class="flex flex-wrap justify-center md:justify-end space-x-4 sm:space-x-6 md:space-x-10 text-sm sm:text-lg md:ml-8 w-full md:w-auto">
-      <a class="hover:text-[#00C2CB] text-white" href="quienessomos.html">Quiénes somos</a>
-      <a class="hover:text-[#00C2CB] text-white" href="quehacemos.html">Qué hacemos</a>
-      <a class="hover:text-[#00C2CB] text-white" href="eventos.html">Eventos</a>
-      <a class="hover:text-[#00C2CB] text-white" href="informacion.html">Contáctanos</a>
-    </nav>
+      <!-- Botón Hamburguesa SOLO en móvil -->
+      <button id="menuBtn" class="md:hidden ml-auto text-white text-3xl">
+        ☰
+      </button>
+
+      <!-- Nav DESKTOP (igual a tu diseño actual) -->
+      <nav class="hidden md:flex flex-wrap justify-end space-x-4 sm:space-x-6 md:space-x-10 text-sm sm:text-lg md:ml-8">
+        <a class="hover:text-[#00C2CB] text-white" href="quienessomos.html">Quiénes somos</a>
+        <a class="hover:text-[#00C2CB] text-white" href="quehacemos.html">Qué hacemos</a>
+        <a class="hover:text-[#00C2CB] text-white" href="eventos.html">Eventos</a>
+        <a class="hover:text-[#00C2CB] text-white" href="recursos.html">Recursos</a>
+        <a class="hover:text-[#00C2CB] text-white" href="informacion.html">Contáctanos</a>
+      </nav>
+    </div>
+
+    <!-- PANEL LATERAL FULLSCREEN MÓVIL (idéntico al index) -->
+    <div id="mobileMenu" class="fixed top-0 left-0 w-full h-full bg-[#00afaa] text-white z-50 translate-x-full transition-transform duration-300 md:hidden overflow-x-hidden">
+
+      <!-- Botón cerrar -->
+      <button id="closeMenu" class="absolute top-4 left-4 text-3xl text-white">×</button>
+
+      <div class="flex flex-col items-center mt-20 space-y-6 text-lg font-medium">
+        <a href="index.html">Home</a>
+        <a href="quienessomos.html">Quiénes somos</a>
+        <a href="quehacemos.html">Qué hacemos</a>
+        <a href="eventos.html">Eventos</a>
+        <a href="recursos.html">Recursos</a>
+        <a href="informacion.html">Contáctanos</a>
+      </div>
+
+      <div class="w-10/12 mx-auto mt-10 border-b border-white/40"></div>
+
+      <div class="flex justify-center gap-4 mt-10 text-2xl">
+        <a href="https://x.com/iagesinstituto?s=11" class="hover:opacity-80 transition" aria-label="Xtwitter">
+          <img src="img/xtwitter.svg" alt="xtwitter" class="w-6 h-6">
+        </a>
+        <a href="https://www.instagram.com/iagesinstituto/" class="hover:opacity-80 transition" aria-label="Instagram">
+          <img src="img/instagram.svg" alt="Instagram" class="w-6 h-6">
+        </a>
+        <a href="https://www.linkedin.com/company/iages-institute/" class="hover:opacity-80 transition" aria-label="Linkedin">
+          <img src="img/linkedin.svg" alt="Linkedin" class="w-6 h-6">
+        </a>
+      </div>
+
+    </div>
   </header>
 
   <main class="flex flex-col w-full">
 
     <!-- Hero Section -->
-    <section class="relative w-full h-[30vh] md:h-[40vh] lg:h-[70vh] flex items-center justify-start text-left overflow-hidden">
+    <section class="relative w-full h-[30vh] md:h-[40vh] lg:h-[30vh] flex items-center justify-start text-left overflow-hidden">
       <!-- Imagen de fondo -->
       <img src="img/banner_nuestros_clientes.png" alt="Nuestros_Clientes" 
         class="absolute inset-0 w-full h-full object-cover 
@@ -74,7 +114,7 @@
       <div class="absolute inset-0 bg-black/70"></div>
 
       <!-- Título alineado a la izquierda -->
-      <div class="relative z-10 text-white px-20 sm:px-26">
+      <div class="relative z-10 text-white px-20 sm:px-26 lg:px-60">
         <h1 class="text-4xl sm:text-6xl font-bold">Nuestros clientes</h1>
       </div>
     </section>
@@ -157,5 +197,20 @@
       © 2025 IAGES – Investigación y Acción en Gestión de la Salud
     </div>
   </footer>
+    <script>
+  const menuBtn = document.getElementById("menuBtn");
+  const closeMenu = document.getElementById("closeMenu");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.remove("translate-x-full");
+    document.body.style.overflow = "hidden";
+  });
+
+  closeMenu.addEventListener("click", () => {
+    mobileMenu.classList.add("translate-x-full");
+    document.body.style.overflow = "";
+  });
+</script>
 </body>
 </html>
