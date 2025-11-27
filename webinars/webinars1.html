@@ -45,68 +45,115 @@
     </p>
   </div>
   
-  <!-- Header -->
-  <header class="sticky top-0 z-50 flex flex-col md:flex-row items-center justify-center md:justify-between px-4 sm:px-12 py-2 w-full bg-[#124968] shadow">
-    <!-- Logo -->
-    <a href="../index.html" class="flex-shrink-0 mb-3 mt-3 md:mb-0 md:mt-3">
-      <img alt="IAGES" class="h-[60px] sm:h-[80px] cursor-pointer" src="../img/logo_IAGES.svg"/>
-    </a>
+<!-- Header -->
+  <header class="sticky top-0 z-50 w-full bg-[#124968] shadow px-4 sm:px-12 py-2">
+    <div class="flex flex-row items-center justify-between w-full md:max-w-[1400px] md:mx-auto">
+  
+      <!-- Logo -->
+      <a href="index.html" class="flex-shrink-0 mt-3 mb-3">
+        <img alt="IAGES" class="h-[60px] sm:h-[80px] cursor-pointer" src="../img/Logo.png"/>
+      </a>
 
-    <!-- Nav -->
-    <nav class="flex flex-wrap justify-center md:justify-end space-x-4 sm:space-x-6 md:space-x-10 text-sm sm:text-lg md:ml-8 w-full md:w-auto">
-      <a class="hover:text-[#00C2CB]" href="../quienessomos.html">Quiénes somos</a>
-      <a class="hover:text-[#00C2CB]" href="../quehacemos.html">Qué hacemos</a>
-      <a class="hover:text-[#00C2CB]" href="../eventos.html">Eventos</a>
-      <a class="hover:text-[#00C2CB]" href="../informacion.html">Contáctanos</a>
-    </nav>
+      <!-- Botón Hamburguesa SOLO en móvil -->
+      <button id="menuBtn" class="md:hidden ml-auto text-white text-3xl">
+        ☰
+      </button>
+
+      <!-- Nav DESKTOP (igual a tu diseño actual) -->
+      <nav class="hidden md:flex flex-wrap justify-end space-x-4 sm:space-x-6 md:space-x-10 text-sm sm:text-lg md:ml-8">
+        <a class="hover:text-[#00C2CB] text-white" href="../quienessomos.html">Quiénes somos</a>
+        <a class="hover:text-[#00C2CB] text-white" href="../quehacemos.html">Qué hacemos</a>
+        <a class="hover:text-[#00C2CB] text-white" href="../eventos.html">Eventos</a>
+        <a class="hover:text-[#00C2CB] text-white" href="../recursos.html">Recursos</a>
+        <a class="hover:text-[#00C2CB] text-white" href="../informacion.html">Contáctanos</a>
+      </nav>
+    </div>
+
+    <!-- PANEL LATERAL FULLSCREEN MÓVIL (idéntico al index) -->
+    <div id="mobileMenu" class="fixed top-0 left-0 w-full h-full bg-[#00afaa] text-white z-50 translate-x-full transition-transform duration-300 md:hidden overflow-x-hidden">
+
+      <!-- Botón cerrar -->
+      <button id="closeMenu" class="absolute top-4 left-4 text-3xl text-white">×</button>
+
+      <div class="flex flex-col items-center mt-20 space-y-6 text-lg font-medium">
+        <a href="../index.html">Home</a>
+        <a href="../quienessomos.html">Quiénes somos</a>
+        <a href="../quehacemos.html">Qué hacemos</a>
+        <a href="../eventos.html">Eventos</a>
+        <a href="../recursos.html">Recursos</a>
+        <a href="../informacion.html">Contáctanos</a>
+      </div>
+
+      <div class="w-10/12 mx-auto mt-10 border-b border-white/40"></div>
+
+      <div class="flex justify-center gap-4 mt-10 text-2xl">
+        <a href="https://x.com/iagesinstituto?s=11" class="hover:opacity-80 transition" aria-label="Xtwitter">
+          <img src="../img/xtwitter.svg" alt="xtwitter" class="w-6 h-6">
+        </a>
+        <a href="https://www.instagram.com/iagesinstituto/" class="hover:opacity-80 transition" aria-label="Instagram">
+          <img src="../img/instagram.svg" alt="Instagram" class="w-6 h-6">
+        </a>
+        <a href="https://www.linkedin.com/company/iages-institute/" class="hover:opacity-80 transition" aria-label="Linkedin">
+          <img src="../img/linkedin.svg" alt="Linkedin" class="w-6 h-6">
+        </a>
+      </div>
+
+    </div>
   </header>
 
-  <main class="bg-gray-100 min-h-[68vh] pt-12 pb-8 sm:pb-6 md:pb-4 lg:pb-12 px-4 sm:px-6 lg:px-0">
-    <!-- Contenedor principal -->
-    <div class="max-w-6xl mx-auto bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden ">
-      
-      <!-- Titular -->
-      <div class="bg-[#2c3e50] text-white text-center p-6">
-        <h1 class="text-3xl font-semibold">Reforma del aseguramiento en Perú</h1>
-        <p class="text-lg mt-2">Panel con expertos del BID, MINSA y EsSalud. Análisis de propuestas viables de reforma.</p>
-      </div>
-      
-      <!-- Imagen -->
-      <div class="p-4">
-        <img src="../img/Portada_Eventos.png" alt="Imagen de CV" class="w-full h-60 object-cover rounded-lg">
-      </div>
-      
-      <!-- Texto de contenido -->
-      <div class="p-6">
-        <p class="text-sm text-gray-700 mb-4 text-center whitespace-pre-line">
-        ¿Quieres aprender a hacer un Curriculum Vitae que te ayude a destacar? Para cualquier
-        proceso de selección laboral, es necesario presentar un CV detallado de manera muy profesional.
+  <main class="bg-gray-100 min-h-[68vh] pt-10 pb-14 px-4 sm:px-6 lg:px-0">
+    <!-- Contenedor estilo artículo más ancho en desktop + más aire -->
+    <article class="max-w-3xl lg:max-w-4xl xl:max-w-6xl mx-auto bg-white border border-gray-200 rounded-2xl shadow-sm 
+                  p-8 sm:p-12 lg:px-40 lg:py-20 mt-5 mb-5">
 
-        Un buen CV debe ser claro, conciso y visualmente atractivo. Incluir información relevante
-        sobre tu formación, experiencia laboral, habilidades y logros puede marcar la diferencia.
+      <!-- Titular estilo blog -->
+      <header class="mb-10">
+        <h1 class="text-4xl sm:text-5xl font-bold text-[#10cfc9] leading-tight text-center">
+          Inversión pública en salud: cómo lograr más salud por cada sol invertido
+        </h1>
+        <p class="text-lg text-gray-600 text-center font-semibold mt-6">
+          “Gobernanza efectiva de la inversión en salud”.
+        </p>
+      </header>
 
-        Recuerda que la presentación también cuenta: elegir una plantilla moderna y bien organizada
-        puede ayudarte a causar una buena primera impresión ante los reclutadores.
+      <!-- Contenido con texto más grande y más aire -->
+      <section class="text-gray-700 text-[17px] sm:text-[18px] leading-relaxed sm:leading-loose space-y-6 text-justify">
+        <p>
+          Este blog resume los principales aportes del webinar “Gobernanza efectiva de la
+          inversión en salud”, que reunió a tres voces con amplia experiencia en la gestión pública
+          y el financiamiento del sector. Participaron Nelson Chui, exgobernador de Lima Región y
+          referente en gestión descentralizada; Eloy Durán, exdirector general de la Dirección
+          General de Inversiones del MEF, con una sólida trayectoria en inversión pública,
+          especialmente en salud; y Augusto Portocarrero, experto en presupuesto público y
+          financiamiento de la salud. 
         </p>
 
-        <!-- Botones -->
-        <div class="flex justify-center mt-6 gap-x-4">
+        <p>
+          Juntos, ofrecieron una mirada integral sobre cómo transformar
+          la inversión en salud en resultados concretos para la población. Moderó el panel Arturo
+          Granados, experto en políticas públicas y descentralización, con extensa experiencia en
+          diversos niveles del sistema de salud.
+        </p>
+      </section>
+
+      <!-- Botones -->
+      <div class="flex flex-col sm:flex-row justify-center sm:gap-x-6 gap-y-4 mt-12">
         <a 
-            href="../recursos.html" 
-            class="bg-[#10cfc9] text-white font-semibold py-2 px-6 rounded-full hover:bg-[#1abc9c] transition-colors inline-block"
+          href="../doc/Inversión pública en salud.pdf" 
+          class="bg-[#10cfc9] text-white font-semibold py-2.5 px-7 rounded-full text-center hover:bg-[#1abc9c] transition-colors"
         >
-            Ver más recursos
+          Leer documento
         </a>
 
         <a 
-            href="#" 
-            class="bg-red-500 text-white font-semibold py-2 px-6 rounded-full hover:bg-red-600 transition-colors inline-block"
+          href="https://www.youtube.com/watch?v=MDwVW3JfY7s" 
+          class="bg-red-500 text-white font-semibold py-2.5 px-7 rounded-full text-center hover:bg-red-600 transition-colors"
         >
-            Ver presentación
+          Ver presentación
         </a>
-        </div>
       </div>
-    </div>
+
+    </article>
   </main>
 
   <!-- Footer -->
@@ -142,14 +189,14 @@
         <h3 class="text-base font-bold text-[#F4C542] border-b border-[#F4C542] mb-4 pb-1">Síguenos</h3>
         <div class="flex items-center space-x-5 mt-4">
           <a href="https://x.com/iagesinstituto?s=11" class="hover:opacity-80 transition" aria-label="Xtwitter">
-            <img src="img/xtwitter.svg" alt="xtwitter" class="w-6 h-6">
+            <img src="../img/xtwitter.svg" alt="xtwitter" class="w-6 h-6">
           </a>
           <a href="https://www.instagram.com/iagesinstituto/" class="hover:opacity-80 transition" aria-label="Instagram">
-            <img src="img/instagram.svg" alt="Instagram" class="w-6 h-6">
+            <img src="../img/instagram.svg" alt="Instagram" class="w-6 h-6">
           </a>
           </a>
           <a href="https://www.linkedin.com/company/iages-institute/" class="hover:opacity-80 transition" aria-label="Linkedin">
-            <img src="img/linkedin.svg" alt="Linkedin" class="w-6 h-6">
+            <img src="../img/linkedin.svg" alt="Linkedin" class="w-6 h-6">
           </a>
         </div>
       </div>
@@ -160,5 +207,20 @@
       © 2025 IAGES – Investigación y Acción en Gestión de la Salud
     </div>
   </footer>
+<script>
+  const menuBtn = document.getElementById("menuBtn");
+  const closeMenu = document.getElementById("closeMenu");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.remove("translate-x-full");
+    document.body.style.overflow = "hidden";
+  });
+
+  closeMenu.addEventListener("click", () => {
+    mobileMenu.classList.add("translate-x-full");
+    document.body.style.overflow = "";
+  });
+</script>
 </body>
 </html>

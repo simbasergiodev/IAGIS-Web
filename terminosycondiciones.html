@@ -5,7 +5,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>IAGES - Nuestros Clientes</title>
+<title>IAGES</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <style>
     body {
@@ -51,7 +51,7 @@
   
       <!-- Logo -->
       <a href="index.html" class="flex-shrink-0 mt-3 mb-3">
-        <img alt="IAGES" class="h-[60px] sm:h-[80px] cursor-pointer" src="img/logo_IAGES.svg"/>
+        <img alt="IAGES" class="h-[60px] sm:h-[80px] cursor-pointer" src="img/Logo.png"/>
       </a>
 
       <!-- Botón Hamburguesa SOLO en móvil -->
@@ -101,33 +101,55 @@
     </div>
   </header>
 
-  <main class="flex flex-col w-full">
-    
-    <!-- Section 1 -->
-    <section class="bg-[#0b3c5d] py-20 sm:px-12 text-white text-center">
-      <div class="max-w-4xl mx-auto px-6">
+  <main class="bg-gray-100 min-h-[68vh] pt-10 pb-14 px-4 sm:px-6 lg:px-0">
+    <!-- Contenedor estilo artículo más ancho en desktop + más aire -->
+    <article class="max-w-3xl lg:max-w-4xl xl:max-w-6xl mx-auto bg-white border border-gray-200 rounded-2xl shadow-sm 
+                  p-8 sm:p-12 lg:px-40 lg:py-20 mt-5 mb-5">
 
-        <!-- Párrafo -->
-        <p class="text-lg leading-relaxed">
-          Desde fines de 2017, el Instituto de Análisis y Gestión - IAGES ha brindado servicios especializados a diversas instituciones nacionales e internacionales.
-          <br><br>
-          Entre ellas destacan el Seguro Social de Salud – EsSalud, la Presidencia del Consejo de Ministros – PCM, la Organización Mundial de la Salud, la Universidad Johns Hopkins, la Cooperación Técnica Belga (a través del Programa de Apoyo a la Política de Seguro Universal de Salud en Perú SIS–SISTEC), Knowledge for Development, SALOG, IBT Group, clínica Good Hope, Johnson & Johnson y la Red de Administración de Salud, entre otras.
-          <br><br>
+      <!-- Titular estilo blog -->
+      <header class="mb-10">
+        <h1 class="text-4xl sm:text-5xl font-bold text-[#10cfc9] leading-tight text-center">
+          Políticas de privacidad
+        </h1>
+        <p class="text-lg text-gray-600 text-center font-semibold mt-6">
+          Recopilación de datos personales
         </p>
-    </section>
+      </header>
 
-    <!-- Section 2 -->
-    <section class="bg-gray-200 py-16">
-      <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
-        <img src="img/Portada_Eventos.png" alt="DESCRIPCIÓN"
-            class="w-full h-96 sm:h-[28rem] md:h-[32rem] rounded-2xl shadow-lg object-cover">
+      <!-- Contenido con texto más grande y más aire -->
+      <section class="text-gray-700 text-[17px] sm:text-[18px] leading-relaxed sm:leading-loose space-y-6 text-justify">
+        <p>
+          En nuestra página web, valoramos y respetamos la privacidad de nuestros visitantes y clientes. 
+          Recopilamos información personal cuando usted se registra en nuestra página web, realiza una búsqueda, 
+          solicita información sobre una propiedad o se comunica con nosotros.
+        </p>
 
-        <div class="md:ml-8">
-          <p class="text-gray-700 leading-relaxed">
-            Las consultorías realizadas incluyen el desarrollo de la sección Perú del estudio “Future Health Spending and Treatment Patterns in Latin America and the Caribbean”; la elaboración de un compendio de estudios, un documento de política y estrategia, y una hoja de ruta para la separación de funciones de prestación y aseguramiento en EsSalud; una propuesta de sostenibilidad y transición para el Objetivo de Desarrollo Sostenible: Cobertura Universal de Salud 2030; elaboración de recomendaciones de políticas públicas para la adquisición y logísitica de medicamentos; el diseño de un diplomado en Aseguramiento Universal de Salud; una metodología para la planificación multinivel de inversiones en agua y saneamiento; modelos normativos en nutrición y recursos humanos hospitalarios para la Superintendencia Nacional de Salud; guías de práctica clínica; evaluación y rediseño de planes de salud y de procesos clínicos; y la estructuración de dos Instituciones Administradoras de Fondos de Aseguramiento en Salud, entre otros proyectos estratégicos.
-        </div>
-      </div>
-    </section>
+        <p>
+          Utilizamos la información personal que recopilamos para responder a sus consultas, proporcionarle 
+          información y mejorar su experiencia en nuestro sitio web.
+          También podemos utilizar su información para enviarle correos electrónicos, además utilizamos 
+          información no personal para analizar el rendimiento de nuestro sitio web y mejorar 
+          su contenido y funcionalidad.
+        </p>
+
+        <p>
+          Sólo compartimos información personal con terceros cuando sea necesario para proporcionarle 
+          un servicio solicitado. Además, podemos compartir su información con nuestros socios comerciales, 
+          pero sólo si usted ha dado su consentimiento para ello. No vendemos ni alquilamos su información 
+          personal a terceros.
+        </p>
+
+        <p>
+          Utilizamos cookies para mejorar su experiencia en nuestro sitio web y para recopilar 
+          información estadística sobre el uso de nuestro sitio.
+          Las cookies son pequeños archivos de texto que se almacenan en su ordenador o dispositivo móvil 
+          y nos permiten reconocerlo cuando regresa a nuestro sitio web.
+          Puede desactivar las cookies en su navegador, pero esto puede afectar al funcionamiento de algunas 
+          funciones de nuestro sitio.
+        </p>
+
+      </section>
+    </article>
   </main>
 
   <!-- Footer -->
@@ -181,7 +203,7 @@
       © 2025 IAGES – Investigación y Acción en Gestión de la Salud
     </div>
   </footer>
-    <script>
+<script>
   const menuBtn = document.getElementById("menuBtn");
   const closeMenu = document.getElementById("closeMenu");
   const mobileMenu = document.getElementById("mobileMenu");

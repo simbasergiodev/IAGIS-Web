@@ -103,22 +103,6 @@
 
   <main class="flex flex-col w-full">
 
-    <!-- Hero Section -->
-    <section class="relative w-full h-[30vh] md:h-[40vh] lg:h-[30vh] flex items-center justify-start text-left overflow-hidden">
-      <!-- Imagen de fondo -->
-      <img src="img/banner_recursos.jpg" alt="IAGES Recursos"
-        class="absolute inset-0 w-full h-full object-cover 
-        object-[25%_center] sm:object-[55%_center] md:object-[50%_center] lg:object-center">
-
-      <!-- Filtro oscuro -->
-      <div class="absolute inset-0 bg-black/70"></div>
-
-      <!-- Título alineado a la izquierda -->
-      <div class="relative z-10 text-white px-6 sm:px-12 md:px-20 lg:px-60">
-        <h1 class="text-4xl sm:text-6xl font-bold">Recursos IAGES</h1>
-      </div>
-    </section>
-
     <!-- Sección Nuestros Recursos -->
     <section class="bg-gray-100 py-20">
       <h2 class="text-4xl sm:text-5xl font-bold mb-12 text-[#10cfc9] lg:pb-6 text-center">Nuestros recursos</h2>
@@ -150,88 +134,38 @@
         <!-- Grid de recursos -->
         <div class="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10" id="resource-grid">
 
-          <!-- Card base -->
-          <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col resource-card hidden" data-category="blog">
-            <img src="img/Portada_Eventos.png" alt="Reforma del aseguramiento"
-              class="w-full h-40 sm:h-44 md:h-48 object-cover object-center">
-            <div class="p-6 flex flex-col items-center text-center flex-grow">
-              <span class="text-xs uppercase font-semibold text-[#10cfc9] mb-1">Blog</span>
-              <h3 class="text-xl font-bold text-[#F4C542] mb-2 leading-snug min-h-[48px] flex items-center justify-center text-center">
-                Reforma del aseguramiento en Perú
-              </h3>
-              <p class="text-sm text-black mb-1 min-h-[20px] flex items-center justify-center">14 junio 2025</p>
-              <p class="text-sm text-black flex-grow min-h-[72px] flex items-center justify-center text-center">
-                Panel con expertos del BID, MINSA y EsSalud. Análisis de propuestas viables de reforma.
-              </p>
-              <a href="blog/blog1.html"
-                class="mt-4 inline-block bg-[#F4C542] text-[#0b3c5d] font-semibold py-2 px-5 rounded-xl hover:bg-[#e0b93b] transition-colors">
-                Ver información
-              </a>
-            </div>
-          </div>
-
-          <!-- Card 2 -->
-
           <!-- Card Evento1 -->
           <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col resource-card" data-category="webinars">
-            <img src="img/Flyer X, LinkedIn.png" alt="Reforma del aseguramiento"
-              class="w-full h-60 sm:h-44 md:h-48 lg:h-70 object-cover object-[center_85%]">
+            <img src="img/Banner Webinar 2 PNA.png" alt="Reforma del aseguramiento"
+              class="w-full h-60 sm:h-44 md:h-48 lg:h-60 object-cover object-[center_35%]">
             <div class="p-6 flex flex-col items-center text-center flex-grow">
               <span class="text-xs uppercase font-semibold text-[#10cfc9] mb-1">Webinars</span>
-              <h3 class="text-xl font-bold text-[#F4C542] pb-4 mb-2 leading-snug min-h-[48px] flex items-center justify-center text-center">
-                 Financiamiento del primer nivel de atención en debate ¿Cuánto, cómo y para qué?
-              </h3>
-              <p class="text-sm text-black mb-1 min-h-[20px] pb-4  flex items-center justify-center italic">6 de noviembre de 2025</p>
-              <p class="text-sm text-black flex-grow min-h-[72px] flex items-center justify-center text-center">
-                Acompáñanos en este espacio de reflexión y diálogo sobre el financiamiento del primer nivel de atención de salud en el Perú. 
+              <p class="text-sm text-black flex-grow min-h-[72px] lg:mb-5 flex items-center justify-center text-center">
+                En este webinar se presenta un estudio reciente sobre el financiamiento del primer nivel de atención en el Perú y se discuten los retos y oportunidades para garantizar la sostenibilidad de la atención primaria en salud. La sesión reúne especialistas y actores del sector que analizan la importancia de fortalecer este nivel como base del sistema de salud, discutiendo alternativas de asignación de recursos, mecanismos de gestión y estrategias para asegurar acceso equitativo y eficiencia en la prestación de servicios.
               </p>
-              <a href="https://www.youtube.com/watch?v=xyQfrNkwfMs"
+              <a href="#"
                 class="mt-4 inline-block bg-[#F4C542] text-[#0b3c5d] font-semibold py-2 px-5 rounded-xl hover:bg-[#e0b93b] transition-colors">
-                Ver presentación
+                Ver más
               </a>
             </div>
           </div>
 
           <!-- Card Evento1 -->
           <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col resource-card" data-category="webinars">
-            <img src="img/Evento_11sept.jpg" alt="Reforma del aseguramiento"
-              class="w-full h-60 sm:h-44 md:h-48 lg:h-70 object-cover object-[center_85%]">
+            <img src="img/Banner Webinar 1 Inversiones.png" alt="Reforma del aseguramiento"
+              class="w-full h-60 sm:h-44 md:h-48 lg:h-60 object-cover object-[center_35%]">
             <div class="p-6 flex flex-col items-center text-center flex-grow">
               <span class="text-xs uppercase font-semibold text-[#10cfc9] mb-1">Webinars</span>
-              <h3 class="text-xl font-bold text-[#F4C542] pb-4 mb-2 leading-snug min-h-[48px] flex items-center justify-center text-center">
-                 Gobernanza Efectiva de la inversión pública en salud
-              </h3>
-              <p class="text-sm text-black mb-1 min-h-[20px] pb-4  flex items-center justify-center italic">11 de septiembre de 2025</p>
-              <p class="text-sm text-black flex-grow min-h-[72px] flex items-center justify-center text-center">
-                Acompáñanos en este espacio de reflexión y diálogo sobre la gobernanza efectiva de la inversión en salud
+              <p class="text-sm text-black flex-grow min-h-[72px] lg:mb-5 flex items-center justify-center text-center ">
+                A partir de una experiencia concreta de gobernanza de la inversión pública en salud, se discute sobre cómo fortalecer los mecanismos de planificación, ejecución y control de los recursos destinados al sector. La sesión reúne especialistas que discuten la importancia de una gestión transparente y eficiente entre los diferentes niveles de gobierno, de la inversión pública en salud, evidenciando avances y desafíos en la sostenibilidad del sistema de salud, así como en la mejora del acceso y calidad de los servicios.
               </p>
-              <a href="https://www.youtube.com/watch?v=MDwVW3JfY7s"
+              <a href="/webinars/webinars1.html"
                 class="mt-4 inline-block bg-[#F4C542] text-[#0b3c5d] font-semibold py-2 px-5 rounded-xl hover:bg-[#e0b93b] transition-colors">
-                Ver presentación
+                Ver más
               </a>
             </div>
           </div>
-
-
-          <!-- Card 3 -->
-          <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col resource-card hidden" data-category="publicaciones">
-            <img src="img/Portada_Eventos.png" alt="Curso: Implementación del seguro universal"
-              class="w-full h-40 sm:h-44 md:h-48 object-cover object-center">
-            <div class="p-6 flex flex-col items-center text-center flex-grow">
-              <span class="text-xs uppercase font-semibold text-[#10cfc9] mb-1">Publicaciones</span>
-              <h3 class="text-xl font-bold text-[#F4C542] mb-2 leading-snug min-h-[48px] flex items-center justify-center text-center">
-                Curso: Implementación del seguro universal
-              </h3>
-              <p class="text-sm text-black mb-1 min-h-[20px] flex items-center justify-center">03 Julio 2025</p>
-              <p class="text-sm text-black flex-grow min-h-[72px] flex items-center justify-center text-center">
-                Formación técnica para cuadros medios del sector salud. Modalidad virtual - 4 semanas.
-              </p>
-              <a href="publicaciones/publicaciones1.html"
-                class="mt-4 inline-block bg-[#F4C542] text-[#0b3c5d] font-semibold py-2 px-5 rounded-xl hover:bg-[#e0b93b] transition-colors">
-                Ver información
-              </a>
-            </div>
-          </div>
+  
         </div>
       </div>
     </section>
@@ -239,6 +173,7 @@
     <!-- Script de filtros -->
     <script>
       document.querySelectorAll('.filter-checkbox').forEach(checkbox => {
+        checkbox.checked = true;
         checkbox.addEventListener('change', () => {
           const selectedFilters = Array.from(document.querySelectorAll('.filter-checkbox:checked')).map(checkbox => checkbox.dataset.filter);
           const cards = document.querySelectorAll('.resource-card');
