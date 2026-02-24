@@ -7,44 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>IAGES - Qué Hacemos</title>
 <script src="https://cdn.tailwindcss.com"></script>
-<style>
-    body {
-      font-family: system-ui, sans-serif;
-    }
-
-    .marquee-container {
-      overflow: hidden;
-      background-color: #00afaa;
-      white-space: nowrap;
-      padding: 8px 0;
-    }
-
-    .marquee {
-      display: inline-block;
-      white-space: nowrap;
-      animation: marquee 12s linear infinite;
-    }
-
-    @keyframes marquee {
-      0% {
-        transform: translateX(100%);
-      }
-      100% {
-        transform: translateX(-100%);
-      }
-    }
-</style>
 
 </head>
 <body class="relative min-h-screen bg-gradient-to-b from-[#08111C] to-[#0E1A29] text-white overflow-x-hidden">
 
-  <!-- Banner superior -->
-  <div class="marquee-container text-white text-[12px] sm:text-sm font-medium">
-    <p class="marquee">
-      Instituto de Análisis y Gestión • Instituto de Análisis y Gestión • Instituto de Análisis y Gestión •
-    </p>
-  </div>
-  
 <!-- Header -->
   <header class="sticky top-0 z-50 w-full bg-[#124968] shadow px-4 sm:px-12 py-2">
     <div class="flex flex-row items-center justify-between w-full md:max-w-[1400px] md:mx-auto">
@@ -61,11 +27,11 @@
 
       <!-- Nav DESKTOP (igual a tu diseño actual) -->
       <nav class="hidden md:flex flex-wrap justify-end space-x-4 sm:space-x-6 md:space-x-10 text-sm sm:text-lg md:ml-8">
-        <a class="hover:text-[#00C2CB] text-white" href="quienessomos.html">Quiénes somos</a>
-        <a class="hover:text-[#00C2CB] text-white" href="quehacemos.html">Qué hacemos</a>
-        <a class="hover:text-[#00C2CB] text-white" href="eventos.html">Eventos</a>
-        <a class="hover:text-[#00C2CB] text-white" href="recursos.html">Recursos</a>
-        <a class="hover:text-[#00C2CB] text-white" href="informacion.html">Contáctanos</a>
+        <a class="hover:text-[#e8b911]" href="quienessomos.html">Conócenos</a>
+        <a class="hover:text-[#e8b911]" href="quehacemos.html">Nuestro propósito</a>
+        <a class="hover:text-[#e8b911]" href="eventos.html">Eventos</a>
+        <a class="hover:text-[#e8b911]" href="recursos.html">Recursos</a>
+        <a class="hover:text-[#e8b911]" href="informacion.html">Contáctanos</a>
       </nav>
     </div>
 
@@ -77,8 +43,8 @@
 
       <div class="flex flex-col items-center mt-20 space-y-6 text-lg font-medium">
         <a href="index.html">Home</a>
-        <a href="quienessomos.html">Quiénes somos</a>
-        <a href="quehacemos.html">Qué hacemos</a>
+        <a href="quienessomos.html">Conócenos</a>
+        <a href="quehacemos.html">Nuestro propósito</a>
         <a href="eventos.html">Eventos</a>
         <a href="recursos.html">Recursos</a>
         <a href="informacion.html">Contáctanos</a>
@@ -117,10 +83,17 @@
     </section>
 
     <!-- Section 2 -->
-    <section class="bg-gray-200 py-16">
+
+    <section class="relative bg-gray-200 py-16 overflow-hidden">
+
+      <!-- Imagen que cubre solo el fondo gris -->
+      <img 
+        src="img/Fortalecimiento.png"
+        class="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none"
+      >
       <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-1 gap-8 items-center">
 
-        <div class="md:ml-8">
+        <div class="relative z-10 md:ml-8">
           <h2 class="text-3xl font-bold mb-6 lg:mb-12 text-[#10cfc9] text-center">Fortalecimiento del sistema de salud</h2>
 
           <!-- Punto 1 -->
@@ -178,6 +151,10 @@
 
     <!-- ===== SECTION 1 (Fondo azul) ===== -->
     <section class="bg-[#0b3c5d] pt-28 pb-28 lg:pb-28 px-6 relative z-10">
+      <img 
+        src="img/GOBERNANZA.png"
+        class="absolute inset-0 w-full h-full object-cover opacity-30 -z-10"
+         >
       <div class="max-w-6xl mx-auto text-center mb-12">
         <h2 class="text-3xl md:text-4xl font-semibold text-white">
           Gobernanza en Salud
@@ -206,41 +183,43 @@
 
     <!-- ===== SECTION 2 (Fondo gris con imagen sobresaliente y globos blancos) ===== -->
     <section class="bg-gray-200 pt-26 pb-20 px-6 relative z-20">
-      <!-- Imagen sobresaliente -->
-      <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/4 w-[60%] max-w-5xl z-30">
-        <img 
-          src="img/banner_que_hacemos.png" 
-          alt="Transition Image" 
-          class="hidden w-full h-auto rounded-2xl shadow-xl object-cover">
-      </div>
+
+      <img 
+        src="img/Financiamiento.png"
+        class="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none z-10"
+      >
 
       <!-- Contenedor del título -->
-      <div class="max-w-6xl mx-auto text-center mb-10 mt-16 sm:mt-52 lg:mt-[4rem] z-30">
+      <div class="max-w-6xl mx-auto text-center mb-10 mt-16 sm:mt-52 lg:mt-[4rem] relative z-20">
         <h2 class="text-3xl md:text-4xl font-semibold text-gray-800">
           Financiamiento del Sector Salud
         </h2>
       </div>
 
       <!-- Globos blancos -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mt-16 lg:mt-22">
-        <div class="bg-white text-gray-700 p-6 rounded-2xl shadow-md">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mt-16 lg:mt-22 relative z-20">
+        <div class="bg-white text-gray-700 p-6 rounded-2xl shadow-md opacity-80">
           <p>Mejora del sistema de financiamiento del sector salud a través del diseño, implementación y monitoreo de políticas orientadas a movilizar los recursos dentro del espacio fiscal disponible y proyectado. Diálogo entre los Ministerios de Salud y Finanzas.</p>
         </div>
-        <div class="bg-white text-gray-700 p-6 rounded-2xl shadow-md">
+        <div class="bg-white text-gray-700 p-6 rounded-2xl shadow-md opacity-80">
           <p>Capacitación en la elaboración de estudios de carga de enfermedad, estimación de costos, análisis y previsión, así como en cuentas de salud nacionales y regionales.</p>
         </div>
-        <div class="bg-white text-gray-700 p-6 rounded-2xl shadow-md">
+        <div class="bg-white text-gray-700 p-6 rounded-2xl shadow-md opacity-80">
           <p>Diseño de paquetes de beneficios de salud para abordar las principales prioridades en salud y mejorar el uso costo-efectivo de los recursos escasos.</p>
         </div>
       </div>
     </section>
 
   <!-- Section 2 -->
-  <section class="bg-gray-100 py-16">
+  <section class="bg-gray-100 relative py-16">
     <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-1 gap-8 items-center">
-      
+
+      <img 
+        src="img/Aseguramiento.png"
+      class="absolute inset-0 w-full h-full object-cover opacity-80 z-0 pointer-events-none"
+  >
       <!-- Texto (izquierda en desktop, abajo en mobile) -->
-      <div class="md:order-1">
+      <div class="md:order-1 relative z-10">
         <h2 class="text-3xl font-bold mb-6 lg:mb-12 text-[#10cfc9] text-center">Aseguramiento en Salud</h2>
 
         <!-- Punto 1 -->
@@ -287,11 +266,15 @@
   </section>
 
   <!-- Section: Gestión de servicios y seguros de salud -->
-  <section class="bg-gray-200 py-16">
+  <section class="bg-gray-200 py-16 relative">
     <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-1 gap-8 items-center">
 
+    <img 
+    src="img/Gestion.png"
+    class="absolute inset-0 w-full h-full object-cover opacity-80 z-0 pointer-events-none"
+     >
       <!-- Texto -->
-      <div class="md:order-1">
+      <div class="md:order-1 relative z-10">
         <h2 class="text-3xl font-bold mb-6 lg:mb-12 text-center text-gray-800">
           Gestión de servicios y seguros de salud
         </h2>
@@ -387,8 +370,8 @@
       <div>
         <h3 class="text-base font-bold text-[#F4C542] border-b border-[#F4C542] mb-4 pb-1">Ácerca de nosotros</h3>
         <ul class="space-y-2">
-          <li><a class="hover:underline" href="quienessomos.html">Quiénes somos</a></li>
-          <li><a class="hover:underline" href="quehacemos.html">Qué hacemos</a></li>
+          <li><a class="hover:underline" href="quienessomos.html">Conócenos</a></li>
+          <li><a class="hover:underline" href="quehacemos.html">Nuestro propósito</a></li>
           <li><a class="hover:underline" href="nuestrosclientes.html">Nuestros clientes</a></li>
           <li><a class="hover:underline" href="informacion.html">Contáctanos</a></li>
         </ul>
