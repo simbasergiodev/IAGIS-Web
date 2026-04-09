@@ -454,6 +454,47 @@
             </div>
           </div>
         </div>
+
+        <!-- Profesional (Armando) -->
+        <div
+          id="card-armando"
+          class="bg-white rounded-2xl p-6 lg:p-4 flex flex-col justify-between items-center text-center overflow-hidden transition-all duration-500 
+          min-h-[260px]"
+        >
+          <h3 class="text-xl lg:text-lg font-bold mb-2 text-[#124968]">Armando Cotrina</h3>
+          <p class="text-gray-700 text-sm lg:text-xs leading-relaxed lg:leading-snug mb-3">
+            Abogado por la Universidad Nacional Federico Villarreal, egresado de la maestría y doctorado en Derecho por la PUCP. Becado en la Universidad Castilla-La Mancha para estudios sobre delitos contra la propiedad intelectual. Especialista en derecho constitucional, civil, administrativo, penal, laboral y de la salud. Experto en gestión pública, políticas anticorrupción, gobernabilidad y elaboración de documentos técnicos.
+          </p>
+
+          <button
+            id="btn-armando"
+            class="text-[#10cfc9] font-semibold text-sm lg:text-xs hover:underline focus:outline-none transition-colors"
+          >
+            Ver más
+          </button>
+
+          <div
+            id="extra-card-armando"
+            class="opacity-0 max-h-0 overflow-hidden transition-all duration-500 ease-in-out"
+          >
+            <div class="mt-4 text-gray-700 text-sm lg:text-xs leading-relaxed lg:leading-snug space-y-3">
+              <p class="pb-3">
+                A lo largo de mi carrera, he liderado el diseño e implementación de estrategias nacionales de salud y de proyectos integrales, colaborando estrechamente con ministerios de salud y socios estratégicos. Como Subdirector de Innovación en el Instituto Nacional de Salud (INS) de Perú, dirigí la modernización de procesos institucionales y la oportuna transferencia tecnológica de los productos desarrollados por la principal institución de investigación en salud pública del Perú. 
+                Cuento con una amplia experiencia en Perú, Angola, República Dominicana y Liberia, liderando el diseño, ejecución y evaluación de programas complejos y de varios millones de dólares en VIH/SIDA, malaria, tuberculosis y GHS. Mi enfoque en el pensamiento sistémico y la innovación ha empoderado a diversos gobiernos locales para efectivamente construir soluciones sostenibles y de largo plazo.
+                Como médico con Maestría en Salud Pública (Epidemiología) y cursos especializados en enfermedades infecciosas, liderazgo y gestión, soy reconocido por mi diplomacia, capacidad de negociación y visión estratégica. Con fluidez en inglés, español y portugués, estoy plenamente capacitado para impulsar el impacto de iniciativas de salud nacionales y globales de alta complejidad.
+              </p>
+
+              <div class="w-full h-60 sm:h-60 md:h-72 lg:h-60 rounded-2xl overflow-hidden mt-4">
+                <img
+                  src="img/Armando_Cotrina.jpg"
+                  alt="Jaime Chang"
+                  class="w-full h-full object-cover object-[center_75%] lg:object-[center_75%]"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
         
       <script>
         // Helper: configura un toggle para una tarjeta
@@ -539,6 +580,7 @@
         setupToggle({ btnId: "btn-augusto", cardId: "card-augusto", extraId: "extra-card-augusto", closedHeight: 360 });
         setupToggle({ btnId: "btn-luis", cardId: "card-luis", extraId: "extra-card-luis", closedHeight: 360 });
         setupToggle({ btnId: "btn-agustin", cardId: "card-agustin", extraId: "extra-card-agustin", closedHeight: 360 });
+        setupToggle({ btnId: "btn-armando", cardId: "card-armando", extraId: "extra-card-armando", closedHeight: 360 });
       </script>
     </section>
   </main>
